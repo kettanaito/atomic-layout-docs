@@ -1,0 +1,19 @@
+{
+  "name": "atomic-layout-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Atomic layout library",
+  "main": "index.js",
+  "scripts": {
+    "docz": "node_modules/.bin/docz"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
+    "webpack-merge": "^4.1.5"
+  },
+  "dependencies": {
+    "remark-frontmatter": "^1.3.1",
+    "styled-components": "^4.1.3"
+  }
+}

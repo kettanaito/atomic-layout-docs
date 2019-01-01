@@ -1,0 +1,173 @@
+---
+name: layout.configure
+menu: API
+route: /api/layout/configure
+---
+
+import Hint from '@components/Hint'
+
+# configure
+
+## Specification
+
+Applies global layout configuration.
+
+<Hint variant="success">
+  Layout is meant to be configured <strong>once</strong>, on the root level of
+  your application.
+</Hint>
+
+## Options
+
+### `defaultUnit`
+
+| Value type    | `String`                                                           |
+| :------------ | :----------------------------------------------------------------- |
+| Default value | `px`                                                               |
+| Description   | Default measurement unit used as a suffix for numeric prop values. |
+
+#### Example
+
+```jsx
+// src/App.jsx
+import Layout from 'atomic-layout'
+
+Layout.configure({
+  defaultUnit: 'rem',
+})
+```
+
+```jsx
+// src/components/SomeComponent.jsx
+<Composition gutter={2} /> // reads as "2rem" of "grid-gap"
+```
+
+### `defaultBehavior`
+
+| Value type    | `up | down | only`                                                       |
+| :------------ | :----------------------------------------------------------------------- |
+| Default value | `up`                                                                     |
+| Description   | Breakpoint behavior used for responsive props without explicit behavior. |
+
+#### Example
+
+```jsx
+// src/App.jsx
+import Layout from 'atomic-layout'
+
+Layout.configure({
+  defaultBehavior: 'down',
+})
+```
+
+```jsx
+// src/components/SomeComponent.jsx
+<Composition
+  template={...}
+  templateMd={...} />
+```
+
+Template prop value is applied for `md` breakpoint and _down_, as contrary to the default, mobile-first behavior, which applies the value from the given breakpoint and _up_.
+
+### `breakpoints`
+
+| Value type    | `TBreakpoints`                                                    |
+| :------------ | :---------------------------------------------------------------- |
+| Default value | Bootstrap 4 breakpoints                                           |
+| Description   | A map of custom [breakpoints](../../fundamentals/breakpoints.md). |
+
+#### Type definition
+
+```typescript
+type TBreakpoint = {
+  minHeight?: number
+  maxHeight?: number
+  minWidth?: number
+  maxWidth?: number
+  minResolution?: string
+  maxResolution?: string
+  aspectRatio?: string
+  minAspectRatio?: string
+  maxAspectRatio?: string
+  scan?: 'interlace' | 'progressive'
+  orientation?: 'portrait' | 'landscape'
+  displayMode?: 'fullscreen' | 'standalone' | 'minimal-ui' | 'browser'
+}
+
+type TBreakpoints = {
+  [breakpointName: string]: TBreakpoint
+}
+```
+
+#### Example
+
+```jsx
+// src/App.jsx
+import Layout from 'atomic-layout'
+
+Layout.configure({
+  breakpoints: {
+    mobile: {
+      maxWidth: 500,
+    },
+    tablet: {
+      minWidth: 501,
+      maxWidth: 764,
+    },
+    retina: {
+      minResolution: '300dpi',
+    },
+  },
+})
+```
+
+```jsx
+// src/components/SomeComponent.jsx
+<Composition
+  templateMobile={...}
+  templateTablet={...}
+  paddingRetina={10} />
+```
+
+<Hint variant="warning">
+  Make sure to explicitly provide a{' '}
+  <a href="/api/layout/configure#defaultbreakpointname">
+    default breakpoint name
+  </a>{' '}
+  when using custom breakpoints.
+</Hint>
+
+### `defaultBreakpointName`
+
+| Value type    | `String`                                                                                 |
+| :------------ | :--------------------------------------------------------------------------------------- |
+| Default value | `"xs"`                                                                                   |
+| Description   | The name of a default breakpoint used for the props without an explicit breakpoint name. |
+
+#### Example
+
+```jsx
+// src/App.jsx
+import Layout from 'atomic-layout'
+
+Layout.configure({
+  defaultBreakpointName: 'mobile',
+  breakpoints: {
+    mobile: {
+      maxWidth: 576,
+    },
+    desktop: {
+      minWidth: 768,
+    },
+  },
+})
+```
+
+```jsx
+// src/components/SomeComponent.jsx
+<Composition
+  template={...}
+  templateDesktop={...} />
+```
+
+Breakpoint-less template prop now references `mobile` breakpoint.
