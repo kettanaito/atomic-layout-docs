@@ -4,6 +4,7 @@ import merge from 'webpack-merge'
 export default {
   lang: 'en',
   dest: '/docs',
+  base: '/atomic-layout-docs/',
   title: 'Atomic layout',
   description: 'Documentation on Atomic layout library',
   favicon: 'assets/favicon.png',
