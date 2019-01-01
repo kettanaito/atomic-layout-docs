@@ -4,7 +4,8 @@
   "description": "Documentation for Atomic layout library",
   "main": "index.js",
   "scripts": {
-    "docz": "node_modules/.bin/docz"
+    "docz": "node_modules/.bin/docz",
+    "build": "npm run docz build && cp CNAME docs/CNAME"
   },
   "license": "MIT",
   "devDependencies": {
