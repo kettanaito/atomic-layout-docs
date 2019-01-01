@@ -3,7 +3,7 @@ import merge from 'webpack-merge'
 
 export default {
   lang: 'en',
-  dest: '/public',
+  dest: '/docs',
   title: 'Atomic layout',
   description: 'Documentation on Atomic layout library',
   favicon: 'assets/favicon.png',
