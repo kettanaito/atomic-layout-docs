@@ -9,6 +9,7 @@
   * [Installation](general/getting-started/installation.md)
   * [Workflow](general/getting-started/workflow.md)
 * [Recipes](general/recipes/README.md)
+  * [Semantics](general/recipes/semantics.md)
   * [Dynamic areas](general/recipes/dynamic-areas.md)
   * [Responsive layout](general/recipes/responsive-layout.md)
 
@@ -17,6 +18,7 @@
 * [Breakpoints](fundamentals/breakpoints.md)
 * [Prop aliases](fundamentals/prop-aliases.md)
 * [Responsive props](fundamentals/responsive-props.md)
+* [Untitled](fundamentals/untitled.md)
 
 ## Components
 

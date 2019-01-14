@@ -19,12 +19,12 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## Advantages
 
+* Tiny, around **6 Kb gzipped**!
 * Based on standardized CSS Grid, no hacks or polyfills
 * Supported in more than **85%** of browsers around the globe
 * Encourages consistent, maintainable layout declaration
 * Supports [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
 * Keeps layout composites immutable and predictable
-* **~6 Kb gzipped!**
 
 ## How does it work?
 

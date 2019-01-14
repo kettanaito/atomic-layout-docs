@@ -5,7 +5,7 @@
 Box is a primitive component designed to distribute alignment and spacing.
 
 {% hint style="warning" %}
-Box has no control over elements composition. Use [Composition](composition.md) instead.
+Box has no control over elements composition. **Use** [**Composition**](composition.md) **instead**.
 {% endhint %}
 
 ## Props
