@@ -17,7 +17,7 @@ You will have much more confidence and meaningful contributions being familiar w
 
 1. Fork [the repository](https://github.com/kettanaito/atomic-layout),
 2. Checkout the forked directory,
-3. Install dependencies via `npm install`
+3. Install dependencies via `yarn install`
 
 ### 1. Create a feature/bugfix branch
 
@@ -25,12 +25,12 @@ You will have much more confidence and meaningful contributions being familiar w
 git checkout -b {ISSUE_NUMBER}-{BRANCH_NAME}
 ```
 
-### 2. Develop!
+### 2. Develop
 
 #### Run development server
 
 ```bash
-npm start
+yarn start
 ```
 
 This launches `webpack-dev-server` in watch mode to bundle the library upon any change. Pay attention to the useful messages and warnings in the terminal during the process.
@@ -38,7 +38,7 @@ This launches `webpack-dev-server` in watch mode to bundle the library upon any 
 #### Run Storybook
 
 ```bash
-npm run storybook
+yarn run storybook
 ```
 
 We develop in stories using [Storybook](https://github.com/storybooks/storybook). Create a story for your feature, or a bugfix scenario, and point your browser to the Storybook port after running the command above.

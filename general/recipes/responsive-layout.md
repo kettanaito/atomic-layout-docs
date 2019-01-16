@@ -1,11 +1,13 @@
 # Responsive layout
 
-**Any responsive layout consists of two essential parts:**
+Responsive is a crucial part of any layout implementation. That's why its concept lies in the core of Atomic layout design, as responsive is integrated by default.
+
+**Implementation of responsive layout consists of two parts:**
 
 1. Conditional \(responsive\) areas;
 2. Conditional props assignment \(`gutter`, `margin`, etc.\);
 
-In this section we are going to take a look at how to implement these fundamentals using Atomic layout library. Make sure to be familiar with the basics of Atomic layout before continue reading.
+In this section we are going to take a look at how to implement these fundamentals. Make sure to be familiar with the basics of Atomic layout before you continue reading.
 
 {% page-ref page="../getting-started/" %}
 
@@ -29,13 +31,15 @@ const templateDesktop = `
 `
 ```
 
-We have two template declarations above: one for mobile and one for desktop screens. Areas `thumbnail`, `heading` and `subheading` are present in both template declarations. However, the `meta`  area is declared in `templateDesktop` only. This makes `meta` a conditional area.
+We have two template declarations above: one for mobile and one for the desktop screen. Areas `thumbnail`, `heading` and `subheading` are present in both template declarations. However, the `meta`  area is declared in `templateDesktop` only. This makes `meta` a conditional area automatically.
 
 {% hint style="info" %}
-Note that template declaration alone has no effect over responsive area rendering. Make sure to supply the template declaration to the respective template prop.
+Note that template declaration alone has no effect over responsive area rendering. Make sure to supply the template declaration to the **respective template prop\(s\)**.
 {% endhint %}
 
 ### Breakpoints
+
+To connect a template declaration with a breakpoint we need to pass the template string to the template prop. 
 
 Having different areas in different template declarations only signifies conditional areas. In order to control the breakpoints where those areas are rendered, we need to pass templates declarations to the `template` props of the `Composition` component:
 
@@ -77,7 +81,7 @@ The composition above will wrap `Meta` grid area in a `<MediaQuery/>` component 
 
 ## Responsive props
 
-Any prop name suffixed with a breakpoint name is a responsive prop. It implies that the prop's value will be applied on the given breakpoint.
+Any prop name suffixed with a breakpoint name becomes responsive. This means that its value is applied at the given breakpoint.
 
 {% page-ref page="../../fundamentals/responsive-props.md" %}
 
