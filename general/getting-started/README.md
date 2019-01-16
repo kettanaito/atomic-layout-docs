@@ -6,9 +6,13 @@ This section alone contains a high-level overview of topics to get started with 
 
 ## CSS Grid
 
-Atomic layout uses CSS Grid, making your experience with it a crucial part of experience with the library. Most of the values you would assign to components are according to the specification, so please make sure you are familiar with the CSS Grid fundamentals.
+{% hint style="warning" %}
+Atomic layout uses CSS Grid, making your experience with it a crucial part of experience with the library.
+{% endhint %}
 
-Worry not, we have prepared a set of useful resources to get you familiar with what CSS Grid is and how to use it.
+Most of the values you would assign to components are according to the CSS Grid specification, so please make sure you are familiar with its fundamentals.
+
+We have prepared a set of useful resources to get you familiar with what CSS Grid is and how to use it. Not only this knowledge will help you to achieve incredible layouts with Atomic layout, but it will also improve your skillset in general.
 
 * \*\*\*\*[**Introduction into CSS Grid \(MDN\)**](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)\*\*\*\*
 * [CSS Grid vs Flexbox \(Medium\)](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)
@@ -16,7 +20,7 @@ Worry not, we have prepared a set of useful resources to get you familiar with w
 
 ## Workflow
 
-One of the biggest benefits of Atomic layout is a standardized workflow. Imagine any layout part being declared and described in the same clear and efficient way. Easy to navigate and maintain.
+One of the biggest benefits of Atomic layout is its standardized workflow. Imagine any layout part being declared  in the same clear and efficient way. Easy to navigate and maintain.
 
 We have prepared the example-based guide to onboard you to the workflow:
 
@@ -24,7 +28,7 @@ We have prepared the example-based guide to onboard you to the workflow:
 
 ## Fundamentals
 
-Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—features which are provided by the library.
+Now is a good time to learn some pillars of Atomic layout. Get familiar with breakpoints, prop aliases and responsive props—essentials to use the library.
 
 {% page-ref page="../../fundamentals/breakpoints.md" %}
 
