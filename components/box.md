@@ -2,10 +2,10 @@
 
 ## Specification
 
-Box is a primitive component designed to distribute alignment and spacing.
+Box is a primitive component that distributes alignment and spacing.
 
 {% hint style="warning" %}
-Box has no control over elements composition. **Use** [**Composition**](composition.md) **instead**.
+Box has no control over elements' composition. **Use** [**Composition**](composition.md) **instead**.
 {% endhint %}
 
 ## Props
@@ -23,7 +23,7 @@ import React from 'react'
 import { Box } from 'atomic-layout'
 
 const Header = ({ children }) => (
-  <Box paddingVertical="10" paddingVerticalMd="20">
+  <Box paddingVertical={10} paddingVerticalMd={20}>
     {children}
   </Box>
 )

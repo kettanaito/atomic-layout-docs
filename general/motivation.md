@@ -73,5 +73,5 @@ Now in Atomic layout **anything** **can be a composition and a composite at the 
 
 ![Atomic layout visualization](../.gitbook/assets/atomic-layout%20%282%29.png)
 
-> ### It is like a grid that goes all the way down, to the furthest leaves of an interface tree.
+> ### **It is like a grid that goes all the way down, to the furthest leaves of an interface tree.**
 

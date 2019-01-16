@@ -1,10 +1,16 @@
 # Breakpoints
 
-## Breakpoint
+## Introduction
 
 Breakpoint is a condition that describes a breaking point of layout acquiring next state. The usage of breakpoints is optional, and is often based on the device's characteristics \(i.e. size, orientation\).
 
-The following properties can be used to describe a breakpoint in Atomic layout:
+{% hint style="success" %}
+Atomic layout operates with the very same breakpoints you would declare with media queries.
+{% endhint %}
+
+## Properties
+
+The following properties can be used to describe a breakpoint:
 
 | **Property name** | **Value type** | **Description** |
 | :--- | :--- | :--- |
@@ -20,6 +26,8 @@ The following properties can be used to describe a breakpoint in Atomic layout:
 | `scan` | `interlace` \| `progressive` | Scanning process of the device. |
 | `orientation` | `portrait` \| `landscape` | Device viewport orientation. |
 | `displayMode` | enum: `fullscreen` \| `standalone` \| `minimal-ui` \| `browser` | Display mode of the application specified in the `manifest.json` |
+
+## Default breakpoint name
 
 ## Default breakpoints
 
