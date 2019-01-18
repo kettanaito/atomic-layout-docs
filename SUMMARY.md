@@ -23,6 +23,7 @@
 
 * [Box](components/box.md)
 * [Composition](components/composition.md)
+* [Only](components/only.md)
 
 ## API
 
