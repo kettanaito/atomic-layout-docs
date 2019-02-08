@@ -1,11 +1,9 @@
 # Breakpoints
 
-## Introduction
-
 Breakpoint is a condition that describes a breaking point of layout acquiring next state. The usage of breakpoints is optional, and is often based on the device's characteristics \(i.e. size, orientation\).
 
 {% hint style="success" %}
-Atomic layout operates with the very same breakpoints you would declare with media queries.
+Atomic layout operates with the very same breakpoints you would use in plain CSS media queries.
 {% endhint %}
 
 ## Properties
@@ -28,6 +26,10 @@ The following properties can be used to describe a breakpoint:
 | `displayMode` | enum: `fullscreen` \| `standalone` \| `minimal-ui` \| `browser` | Display mode of the application specified in the `manifest.json` |
 
 ## Default breakpoint name
+
+Whenever a component's prop is not suffixed by a breakpoint name, a default breakpoint name is used.
+
+**The default breakpoint name is `xs`, implying mobile-first behavior.**
 
 ## Default breakpoints
 
