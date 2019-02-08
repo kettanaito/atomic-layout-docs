@@ -15,6 +15,7 @@ Box supports all [Prop aliases](../fundamentals/prop-aliases.md), **except** tho
 | Prop name | Type | Description |
 | :--- | :--- | :--- |
 | `flex` | `boolean` | Display a box as `flex`. |
+| `inline` | `boolean` | Uses inline display. |
 
 ## Example
 

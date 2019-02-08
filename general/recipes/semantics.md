@@ -1,6 +1,6 @@
 # Semantics
 
-Semantics is essential when creating layouts. Atomic layout allows to render any exposed component as a valid HTML element. That is possible by using the polymorphic feature of `styled-components`.
+Semantics must be retained. Atomic layout allows to render any exposed component as a valid HTML element. That is possible by using the polymorphic prop feature of `styled-components`.
 
 {% hint style="info" %}
 Please refer to the [**Polymorphic prop API**](https://www.styled-components.com/docs/api#as-polymorphic-prop) of styled components.

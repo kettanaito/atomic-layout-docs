@@ -2,7 +2,7 @@
 
 Responsive is a crucial part of any layout implementation. That's why its concept lies in the core of Atomic layout design, as responsive is integrated by default.
 
-**Implementation of responsive layout consists of two parts:**
+**Implementation of responsive layout has two parts:**
 
 1. Conditional \(responsive\) areas;
 2. Conditional props assignment \(`gutter`, `margin`, etc.\);
@@ -94,12 +94,12 @@ We have already used a responsive prop in the example above. By suffixing `templ
   gutter={10}
   gutterLg={20}>
   {({ Thumbnail, Heading, Subheading, Meta }) => (
-    <React.Fragment>
+    <>
       <Thumbnail>I am rendered always</Thumbnail>
       <Heading>I am rendered always</Heading>
       <Subheading>I am rendered always</Subheading>
       <Meta>I am rendered on "lg" breakpoint and up!</Meta>
-    </React.Fragment>
+    </>
   )}
 </Composition>
 ```

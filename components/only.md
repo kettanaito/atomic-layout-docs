@@ -22,9 +22,11 @@ import { Only } from 'atomic-layout'
 
 const Post = () => (
   <>
+    {/* Refer to defined breakpoints by name */}
     <Only for="sm">
       <p>Renders on "sm" breakpoint</p>
     </Only>
+    {/* Provide explicit breakpoint objects */}
     <Only for={{ minWidth: 900, maxWidth: 1000 }}>
       <p>Renders on the custom breakpoint</p>
     </Only>
@@ -33,6 +35,8 @@ const Post = () => (
 ```
 
 ### High-pass
+
+High-pass is a display model where the content is shown after a specified breakpoint.
 
 ```jsx
 import { Only } from 'atomic-layout'
@@ -46,6 +50,8 @@ const Post = () => (
 
 ### Low-pass
 
+Low-pass is a display model where the content is displayed prior to a specified breakpoint.
+
 ```jsx
 import { Only } from 'atomic-layout'
 
@@ -58,6 +64,8 @@ const Post = () => (
 
 ### Bell
 
+Bell is a combination of low-pass and high-pass display models. The content is displayed starting from a certain breakpoint, and displayed prior to a certain breakpoint.
+
 ```jsx
 import { Only } from 'atomic-layout'
 
@@ -69,6 +77,8 @@ const Post = () => (
 ```
 
 ### Notch
+
+Notch is the reversed variant of the Bell behavior: the content is rendered everywhere **except** the given breakpoints range.
 
 ```jsx
 import { Only } from 'atomic-layout'
@@ -110,9 +120,32 @@ Apart from passing defined breakpoint names, you can provide a custom [breakpoin
 import { Only } from 'atomic-layout'
 
 const Post = () => (
-  <Only from={{ minWidth: 792 }}>
-    <p>Renders on custom breakpoint</p>
-  </Only>
+  <>
+    {/* Explicit */}
+    <Only for={{ maxWidth: 568 }}>
+      <p>Renders for the given breakpoint</p>
+    </Only>
+    
+    {/* High-pass */}
+    <Only from={{ minWidth: 792 }}>
+      <p>Renders stating from the given breakpoint</p>
+    </Only>
+    
+    {/* Low-pass */}
+    <Only to={{ maxWidth: 500 }}>
+      <p>Renders prior to the given breakpoint.</p>
+    </Only>
+    
+    {/* Bell */}
+    <Only from={{ minWidth: 568 }} to={{ maxWidth: 769 }}>
+      <p>Renders only between the given two breakpoints.</p>
+    </Only>
+    
+    {/* Notch */}
+    <Only except from={{ minWidth: 568 }} to={{ maxWidth: 769 }}>
+      <p>Renders everywhere except the given breakpoint range.</p>
+    </Only>
+  </>
 )
 ```
 

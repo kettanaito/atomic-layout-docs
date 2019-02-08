@@ -10,7 +10,7 @@
   * [Workflow](general/getting-started/workflow.md)
 * [Recipes](general/recipes/README.md)
   * [Semantics](general/recipes/semantics.md)
-  * [Dynamic areas](general/recipes/dynamic-areas.md)
+  * [Iterative areas](general/recipes/dynamic-areas.md)
   * [Responsive layout](general/recipes/responsive-layout.md)
 
 ## Fundamentals

@@ -1,6 +1,6 @@
-# Dynamic areas
+# Iterative areas
 
-A single template area may be rendered multiple types, for example when rendering a list of items.
+A single template area may be rendered multiple types, for example during the iteration of a list items rendering.
 
 ```jsx
 import React from 'react'

@@ -12,7 +12,7 @@ To declare a responsive prop follow the next schema:
 
 ### **Prop name**
 
-Any of [Prop aliases](prop-aliases.md) can be used as a prop name part of a responsive prop.
+Any [Prop alias](prop-aliases.md) can be used as a responsive prop. Not all props are allowed as responsive props to preserve the ideological approach of layout composition.
 
 ### Breakpoint name
 
