@@ -1,8 +1,8 @@
 # Prop aliases
 
-Props alias is a prop name shorthand that compiles into the CSS property associated with it.
+Prop alias is a prop name shorthand that compiles into plain CSS property\(-ies\).
 
-Atomic layout uses this feature for convenience and development speed. These props can be assigned to any component exposed by the library, including the are components generated from your template strings.
+Atomic layout uses this feature for convenience and development speed. These props can be assigned to any component exposed by the library, including the area components generated from your composition template strings.
 
 {% hint style="info" %}
 Values of prop aliases can be applied conditionally. **Read about** [**Responsive props**](responsive-props.md).
