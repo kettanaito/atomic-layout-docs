@@ -45,7 +45,11 @@ Each prop alias is associated with a single, or multiple corresponding CSS prope
 
 | **Prop name** | **CSS property** |
 | :--- | :--- |
+| `minHeight` | `min-height` |
+| `maxHeight` | `max-height` |
 | `height` | `height` |
+| `minWidth` | `min-width` |
+| `maxWidth` | `max-width` |
 | `width` | `width` |
 
 ## Spacing
