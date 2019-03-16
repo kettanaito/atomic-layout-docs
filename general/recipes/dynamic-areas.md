@@ -21,5 +21,29 @@ export default List
 By setting `row` and `col` props to "auto" you enable the auto-placing algorithm.
 {% endhint %}
 
+### Using a custom component
+
+It's possible to pass a React component reference as a value to the polymorphic "as" prop. Note, however, that would require you to explicitly spread the `rest` props on your custom component, in order for `styled-components` to properly attach generated class names.
+
+```jsx
+import React from 'react'
+import { Box } from 'atomic-layout'
+import styled from 'styled-components'
+
+const Header = (props) => (
+  /**
+   * Spreading the props assigns "className" (SC)
+   * and the props from Atomic layout.
+   */
+  <div {...props} />
+)
+
+const MyComponent = () => (
+  <Box as={Header} height={50} padding={10} />
+)
+
+export default MyComponent
+```
+
 
 
