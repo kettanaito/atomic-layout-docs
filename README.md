@@ -21,16 +21,16 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 * Tiny, around **6 Kb gzipped**!
 * Based on standardized CSS Grid, no hacks or polyfills
-* Supported in more than **85%** of browsers around the globe
+* Supported in more than [**92%**](https://caniuse.com/#search=css%20grid) of browsers worldwide
 * Encourages consistent, maintainable layout declaration
 * Supports [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
 * Keeps layout composites immutable and predictable
 
 ## How does it work?
 
-Briefly, Atomic layout is based on [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present, configure their relation, and render your components in those areas.
+Atomic layout is based on [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present, configure their relation, and render your components in those areas.
 
-Get a more profound understanding of what Atomic layout does following the example-based guidelines:
+Get a more profound understanding of how the library works by following these example-based guidelines:
 
 {% page-ref page="general/getting-started/" %}
 

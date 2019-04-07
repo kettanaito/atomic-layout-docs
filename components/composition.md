@@ -23,7 +23,7 @@ Composition supports all [Prop aliases](../fundamentals/prop-aliases.md).
 Composition begins by defining a template string that consists of layout \(grid\) areas.
 
 ```jsx
-const templateMobile = `
+const areasMobile = `
   logo
   menu
 `
@@ -44,12 +44,12 @@ const templateTablet = `
 
 ### Render Composition
 
-Once layout templates are defined, pass them as the respective `template` props of the Composition. Each area in the template is turned into a React component and being exposed as an argument property of the children function:
+Once layout templates are defined, pass them as the respective `areas` props of the Composition. Each area in the template is turned into a React component and being exposed as an argument property of the children function:
 
 ```jsx
 <Composition
-  template={templateMobile}
-  templateMd={templateTablet}>
+  areas={areasMobile}
+  areasMd={areasTablet}>
   {({ Logo, Search, Menu }) => (
     <>
       <Logo>...</Logo>
@@ -70,8 +70,8 @@ Composition is meant to be configurable. There is a set of [Prop aliases](../fun
 
 ```jsx
 <Composition
-  template={templateMobile}
-  templateMd={templateTablet}
+  areas={areasMobile}
+  areasMd={areasTablet}
   templateCols="1fr auto"
   templateColsMd="1fr 1fr" />
 ```
@@ -109,21 +109,21 @@ Note that using the Box component is recommended when you don't wish to control 
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const mobileTemplate = `
+const areasMobile = `
   thumbnail
   heading
   content
 `
 
-const desktopTemplate = `
+const areasDesktop = `
   thumbnail heading
   thumbnail content
 `
 
 const ArtistCard = ({ title, imageUrl, description }) => (
   <Composition
-    template={mobileTemplate}
-    templateMd={desktopTemplate}
+    areas={areasMobile}
+    areasMd={areasDesktop}
     gutter={1}
     gutterMd={2}
     padding={1}>
@@ -157,14 +157,9 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 import ArtistContent from './ArtistContent'
 
-const mobileTemplate = `
+const areasMobile = `
   thumbnail
   content
-`
-
-const desktopTemplate = `
-  thumbnail content
-  thumbnail content
 `
 
 const ArtistCard = ({
@@ -174,7 +169,7 @@ const ArtistCard = ({
   imageUrl,
   onShareClick
 }) => (
-  <Composition template={mobileTemplate}>
+  <Composition areas={areasMobile}>
     {({ Thumbnail, Content }) => (
       <>
         <Thumbnail>
@@ -202,21 +197,21 @@ export default ArtistCard
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const mobileTemplate = `
+const areasMobile = `
   meta
   actions
   text
 `
 
-const desktopTemplate = `
+const areasTablet = `
   meta actions
   text text
 `
 
 const ArtistContent = ({ description, publishDate, onShareClick }) => (
   <Composition
-    template={mobileTemplate}
-    templateMd={desktopTemplate}
+    areas={areasMobile}
+    areasMd={areasTablet}
     gutter="10"
     gutterMd="15">
     {({ Meta, Actions, Text }) => (

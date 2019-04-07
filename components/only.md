@@ -8,10 +8,10 @@
 
 | Prop name | Prop type | Default value | Description |
 | :--- | :--- | :--- | :--- |
-| for | `string | Object` | – | Exact breakpoint name at which to render the children. Has the highest priority whenever provided. |
-| from | `string | Object` | – | Starting breakpoint at which to render the children. Can be combined with the other props. |
-| to | `string | Object` | – | Ending breakpoint at which to render the children. Can be combined with the other props. |
-| except | `boolean` | false | Flag that controls a notch behavior, when set to "true". Can be combined with the other props. |
+| `for` | `string | Object` | – | Exact breakpoint name at which to render the children. Has the highest priority whenever provided. |
+| `from` | `string | Object` | – | Starting breakpoint at which to render the children. Can be combined with the other props. |
+| `to` | `string | Object` | – | Ending breakpoint at which to render the children. Can be combined with the other props. |
+| `except` | `boolean` | false | Flag that controls a notch behavior, when set to "true". Can be combined with the other props. |
 
 ## Example
 
@@ -26,6 +26,7 @@ const Post = () => (
     <Only for="sm">
       <p>Renders on "sm" breakpoint</p>
     </Only>
+    
     {/* Provide explicit breakpoint objects */}
     <Only for={{ minWidth: 900, maxWidth: 1000 }}>
       <p>Renders on the custom breakpoint</p>

@@ -14,7 +14,7 @@ import { Composition } from 'atomic-layout'
 import { Footer as CustomFooter } from '@components'
 
 const PageContent = () => (
-  <Composition as="main" template="header footer">
+  <Composition as="main" areas="header footer">
     {({ Header, Footer }) => (
       <>
         <Header as="header">{...}</Header>

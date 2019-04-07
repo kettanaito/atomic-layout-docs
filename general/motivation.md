@@ -13,7 +13,7 @@ Imagine that you can render a composition as a component. It doesn't do anything
 ```jsx
 import { Composition } from 'atomic-layout'
 
-<Composition template="icon text">
+<Composition areas="icon text">
   {({ Icon, Text }) => (
     <>
       <Icon>...</Icon>
@@ -32,11 +32,11 @@ import { Composition } from 'atomic-layout'
 
 {/* Defining "Button" as a composition */}
 const Button = () => (
-  <Composition template="icon text">{...}</Composition>
+  <Composition areas="icon text">{...}</Composition>
 )
 
 const CardItem = () => (
-  <Composition template="actions">
+  <Composition areas="actions">
     {({ Actions }) => (
       <>
         <Actions>

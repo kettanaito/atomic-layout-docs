@@ -20,21 +20,21 @@ import { Composition } from 'atomic-layout'
 
 ### Define layout areas
 
-Now describe your layout in a verbose `grid-template-areas` syntax. You can use single- or multiline strings as templates.
+Now describe your layout in a verbose `grid-template-areas` syntax. You can use single- or multiline strings as areas.
 
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // areas for mobile devices
-const templateMobile = `
+const areasMobile = `
   header
   content
   footer
 `
 
 // areas for tablets
-const templateTablet = `
+const areasTablet = `
   header header
   content aside
   footer footer
@@ -47,21 +47,21 @@ Note that the position of an area within the template string affects where the a
 
 ### Configure composition
 
-Pass the defined template string as the values of respective `template` props of the `Composition` component:
+Pass the defined template string as the values of respective `areas` props of the `Composition` component:
 
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
-const templateMobile = `
+const areasMobile = `
   header
   content
   footer
 `
 
 // grid areas on tablets
-const templateTablet = `
+const areasTablet = `
   header header
   content aside
   footer footer
@@ -69,8 +69,8 @@ const templateTablet = `
 
 const Page = () => (
   <Composition
-    template={templateMobile}
-    templateMd={templateTablet}>
+    areas={areasMobile}
+    areasMd={areasTablet}>
     {() => (/* ... */)}
   </Composition>
 )
@@ -91,14 +91,14 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 
 // grid areas on mobile devices
-const templateMobile = `
+const areasMobile = `
   header
   content
   footer
 `
 
 // grid areas on tablets
-const templateTablet = `
+const areasTablet = `
   header header
   content aside
   footer footer
@@ -106,8 +106,8 @@ const templateTablet = `
 
 const Page = () => (
   <Composition
-    template={templateMobile}
-    templateMd={templateTablet}
+    areas={areasMobile}
+    areasMd={areasTablet}
   >
     {({ Header, Content, Aside, Footer }) => (
       <>
@@ -123,7 +123,7 @@ const Page = () => (
 export default Page
 ```
 
-Pay attention that the Aside area exists only in `templateTablet` declaration. Atomic layout will automatically wrap it in a proper `<MediaQuery/>` component to prevent it from rendering on mobile devices. **Responsive areas are built-in**.
+Pay attention that the Aside area exists only in `areasTablet` declaration. Atomic layout will automatically wrap it in a proper `<MediaQuery/>` component to prevent it from rendering on mobile devices. **Responsive areas are built-in**.
 
 {% hint style="info" %}
 You can also render a [Template-less composition](../../components/composition.md#template-less-composition).

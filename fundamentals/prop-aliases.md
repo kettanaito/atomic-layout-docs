@@ -14,7 +14,8 @@ Each prop alias is associated with a single, or multiple corresponding CSS prope
 
 | **Prop name** | **CSS property** |
 | :--- | :--- |
-| `template` | [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) |
+| `areas` | [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) |
+| `template` | [~~`grid-template-areas`~~](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) |
 | `templateCols` | [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |
 | `templateRows` | [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows) |
 | `gutter` | [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) |

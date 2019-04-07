@@ -18,13 +18,13 @@ In this section we are going to take a look at how to implement these fundamenta
 Any grid area that is not present in all template declarations automatically becomes responsive.
 
 ```jsx
-const templateMobile = `
+const areasMobile = `
   thumbnail
   heading
   subheading
 `
 
-const templateDesktop = `
+const areasDesktop = `
   thumbnail heading
   thumbnail subheading
   thumbnail meta
@@ -47,13 +47,13 @@ Having different areas in different template declarations only signifies conditi
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const templateMobile = `
+const areasMobile = `
   thumbnail
   heading
   subheading
 `
 
-const templateDesktop = `
+const areasDesktop = `
   thumbnail heading
   thumbnail subheading
   thumbnail meta
@@ -61,8 +61,8 @@ const templateDesktop = `
 
 const Card = () => (
   <Composition
-    template={templateMobile}
-    templateLg={templateDesktop}>
+    areas={areasMobile}
+    areasLg={areasDesktop}>
     {({ Thumbnail, Heading, Subheading, Meta }) => (
       <>
         <Thumbnail>I am rendered always</Thumbnail>
@@ -89,8 +89,8 @@ We have already used a responsive prop in the example above. By suffixing `templ
 
 ```jsx
 <Composition
-  template={templateMobile}
-  templateLg={templateDesktop}
+  areas={areasMobile}
+  areasLg={areasDesktop}
   gutter={10}
   gutterLg={20}>
   {({ Thumbnail, Heading, Subheading, Meta }) => (

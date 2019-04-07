@@ -32,18 +32,18 @@ First step is getting the array of unique grid area names, their breakpoint and 
 ```jsx
 import { Composition } from 'atomic-layout'
 
-const template = `
+const areasMobile = `
   first second
 `
 
-const templateTablet = `
+const areasTablet = `
   first second
   first third
 `
 
 <Composition
-  template={template}
-  tempalteMd={templateTablet} />
+  areas={areasMobile}
+  areasMd={areasTablet} />
 ```
 
 ```javascript

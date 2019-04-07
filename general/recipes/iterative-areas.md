@@ -7,7 +7,7 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const List = ({ items }) => (
-  <Composition template="column" gutter={10}>
+  <Composition areas="column" gutter={10}>
     {({ Column }) => items.map((item) => (
       <Column key={item.id} col="auto">{item}</Column> 
     ))}
