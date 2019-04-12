@@ -2,7 +2,7 @@
 
 ## Specification
 
-"Only" is a responsive utility component. It allows to control when its children should render. By default, it integrates with the [configured Layout breakpoints](../api/layout/configure.md), allowing quick breakpoint names references.
+"Only" component renders its children according to the media query parameters provided to it via props. By default, it integrates with the [configured Layout breakpoints](../layout/configure.md), allowing quick breakpoint references.
 
 ## Props
 
@@ -11,7 +11,7 @@
 | `for` | `string | Object` | – | Exact breakpoint name at which to render the children. Has the highest priority whenever provided. |
 | `from` | `string | Object` | – | Starting breakpoint at which to render the children. Can be combined with the other props. |
 | `to` | `string | Object` | – | Ending breakpoint at which to render the children. Can be combined with the other props. |
-| `except` | `boolean` | false | Flag that controls a notch behavior, when set to "true". Can be combined with the other props. |
+| `except` | `boolean` | `false` | Flag that controls a notch behavior, when set to `true`. Can be combined with the other props. |
 
 ## Example
 
@@ -115,7 +115,7 @@ export default Post
 
 ### Custom breakpoints
 
-Apart from passing defined breakpoint names, you can provide a custom [breakpoint](../fundamentals/breakpoints.md) Object to the props of this component. The provided breakpoint's options will be used to control the rendering behavior.
+Apart from passing defined breakpoint names, you can provide a custom [breakpoint](../../fundamentals/breakpoints.md) Object to the props of this component. The provided breakpoint's options will be used to control the rendering behavior.
 
 ```jsx
 import { Only } from 'atomic-layout'

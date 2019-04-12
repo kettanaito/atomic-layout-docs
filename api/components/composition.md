@@ -13,7 +13,7 @@ Composition inherits from [Box](box.md) component, thus is accepts the same prop
 | `inline` | `boolean` | Renders composition with `display: inline-grid`. |
 
 {% hint style="info" %}
-Composition supports all [Prop aliases](../fundamentals/prop-aliases.md).
+Composition supports all [Prop aliases](../../fundamentals/prop-aliases.md).
 {% endhint %}
 
 ## Usage
@@ -33,7 +33,7 @@ const areasMobile = `
 Template string is just an alias for [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
 {% endhint %}
 
-Since Atomic layout comes with responsive built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../fundamentals/breakpoints.md) of your layout.
+Since Atomic layout comes with responsive built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../../fundamentals/breakpoints.md) of your layout.
 
 ```jsx
 const templateTablet = `
@@ -66,7 +66,7 @@ Generated area components are exposed as unique capitalized keys of the children
 
 ## Configuration
 
-Composition is meant to be configurable. There is a set of [Prop aliases](../fundamentals/prop-aliases.md) you can apply to make composition suit your needs. For example, we can specify a `templateCols` prop to control the behavior of our columns on different breakpoints:
+Composition is meant to be configurable. There is a set of [Prop aliases](../../fundamentals/prop-aliases.md) you can apply to make composition suit your needs. For example, we can specify a `templateCols` prop to control the behavior of our columns on different breakpoints:
 
 ```jsx
 <Composition
@@ -80,7 +80,7 @@ Composition is meant to be configurable. There is a set of [Prop aliases](../fun
 
 ### Template-less composition
 
-Composition can be used without any templates. In that case it serves as a `display: grid` wrapper for  its children elements. All [Prop aliases](../fundamentals/prop-aliases.md) still apply.
+Composition can be used without any templates. In that case it serves as a `display: grid` wrapper for  its children elements. All [Prop aliases](../../fundamentals/prop-aliases.md) still apply.
 
 ```jsx
 import React from 'react'

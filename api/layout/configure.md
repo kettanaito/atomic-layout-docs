@@ -4,7 +4,7 @@
 
 Applies global layout configuration.
 
-{% hint style="success" %}
+{% hint style="warning" %}
 Layout is meant to be configured **once**, on the root level of your application.
 {% endhint %}
 
@@ -131,15 +131,15 @@ Layout.configure({
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
-    templateMobile={...}
-    templateTablet={...}
+    areasMobile={...}
+    areasTablet={...}
     paddingRetina={10} />
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
 {% hint style="warning" %}
-Make sure to explicitly provide a [default breakpoint name](configure.md#defaultbreakpointname) when using custom breakpoints.
+Make sure to explicitly provide a [default breakpoint name](configure.md#defaultbreakpointname) when using custom breakpoints, so Atomic layout knows when to apply props that have no breakpoint suffix.
 {% endhint %}
 
 ### `defaultBreakpointName`
@@ -147,7 +147,7 @@ Make sure to explicitly provide a [default breakpoint name](configure.md#default
 | Value type | `String` |
 | :--- | :--- |
 | Default value | `"xs"` |
-| Description | The name of a default breakpoint used for the props without an explicit breakpoint name. |
+| Description | The name of a default breakpoint used for the props without an explicit breakpoint suffix. |
 
 #### Example
 
@@ -175,11 +175,11 @@ Layout.configure({
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
-    template={...}
-    templateDesktop={...} />
+    padding={...}
+    paddingDesktop={...} />
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Breakpoint-less template prop now references `mobile` breakpoint.
+Breakpoint-less `padding` prop is now applied on the `mobile` breakpoint by default.
 

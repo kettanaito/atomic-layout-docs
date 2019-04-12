@@ -19,16 +19,14 @@
 * [Prop aliases](fundamentals/prop-aliases.md)
 * [Responsive props](fundamentals/responsive-props.md)
 
-## Components
-
-* [Box](components/box.md)
-* [Composition](components/composition.md)
-* [Only](components/only.md)
-
 ## API
 
 * [Layout](api/layout/README.md)
   * [configure\(\)](api/layout/configure.md)
+* [Components](api/components/README.md)
+  * [Box](api/components/box.md)
+  * [Composition](api/components/composition.md)
+  * [Only](api/components/only.md)
 
 ## Developers
 

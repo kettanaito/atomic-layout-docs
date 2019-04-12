@@ -10,7 +10,7 @@ Box has no control over elements' composition. **Use** [**Composition**](composi
 
 ## Props
 
-Box supports all [Prop aliases](../fundamentals/prop-aliases.md), **except** those specific to CSS Grid.
+Box supports all [Prop aliases](../../fundamentals/prop-aliases.md), **except** those specific to CSS Grid.
 
 | Prop name | Type | Description |
 | :--- | :--- | :--- |

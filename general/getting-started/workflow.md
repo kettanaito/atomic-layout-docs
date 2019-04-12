@@ -126,8 +126,8 @@ export default Page
 Pay attention that the Aside area exists only in `areasTablet` declaration. Atomic layout will automatically wrap it in a proper `<MediaQuery/>` component to prevent it from rendering on mobile devices. **Responsive areas are built-in**.
 
 {% hint style="info" %}
-You can also render a [Template-less composition](../../components/composition.md#template-less-composition).
+You can also render a [Template-less composition](../../api/components/composition.md#template-less-composition).
 {% endhint %}
 
-That's it. We have created a layout composition for our `Page` component, that consist of four layout areas. No we can render another compositions inside those layout areas, thus making a [Nested composition](../../components/composition.md#nested-composition). The latter is a main distinctive key of Atomic layout, which allows to create immersive layouts following the same pattern.
+That's it. We have created a layout composition for our `Page` component, that consist of four layout areas. No we can render another compositions inside those layout areas, thus making a [Nested composition](../../api/components/composition.md#nested-composition). The latter is a main distinctive key of Atomic layout, which allows to create immersive layouts following the same pattern.
 
