@@ -18,6 +18,10 @@ We have prepared a set of useful resources to get you familiar with what CSS Gri
 * [CSS Grid vs Flexbox \(Medium\)](https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf)
 * [CSS Grid Visual Cheatsheet](http://grid.malven.co)
 
+## Installation
+
+{% page-ref page="installation.md" %}
+
 ## Workflow
 
 One of the biggest benefits of Atomic layout is its standardized workflow. Imagine any layout part being declared  in the same clear and efficient way. Easy to navigate and maintain.

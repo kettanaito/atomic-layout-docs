@@ -6,7 +6,13 @@ This section is going to demonstrate how the workflow with Atomic layout looks l
 
 ## Declarative
 
-The biggest difference when working with Atomic layout is that you **declare** what your layout suppose to look like, without explicitly telling how that must be achieved.
+The biggest difference when working with Atomic layout is that you **declare** what your layout suppose to look like, without explicitly telling how to achieve it.
+
+There are multipe components exported by the library, but for the sake of demonstration the Composition component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
+
+Make sure to read through the list of all components:
+
+{% page-ref page="../../api/components/" %}
 
 ## Creating a composition
 
