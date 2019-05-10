@@ -27,6 +27,11 @@
   * [Box](api/components/box.md)
   * [Composition](api/components/composition.md)
   * [Only](api/components/only.md)
+* [Hooks](api/hooks/README.md)
+  * [useViewportChange](api/hooks/use-viewport-change.md)
+  * [useBreakpointChange](api/hooks/use-breakpoint-change.md)
+  * [useResponsiveValue](api/hooks/use-responsive-value.md)
+  * [useResponsiveProps](api/hooks/useresponsiveprops.md)
 
 ## Developers
 

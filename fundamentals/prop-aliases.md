@@ -18,15 +18,18 @@ Each prop alias is associated with a single, or multiple corresponding CSS prope
 | `template` | [~~`grid-template-areas`~~](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) |
 | `templateCols` | [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) |
 | `templateRows` | [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows) |
-| `gutter` | [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) |
-| `gutterCol` | [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) |
-| `gutterRow` | [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap) |
+| `gap` | [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) |
+| `gapCol` | [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) |
+| `gapRow` | [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap) |
 | `col` | [`grid-column`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column) |
 | `colStart` | [`grid-column-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start) |
 | `colEnd` | [`grid-column-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end) |
 | `row` | [`grid-row`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row) |
 | `rowStart` | [`grid-row-start`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start) |
 | `rowEnd` | [`grid-row-end`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end) |
+| `autoRows` | [`grid-auto-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows) |
+| `autoCols` | [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) |
+| `autoFlow` | [`grid-auto-flow`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow) |
 
 ## Positioning
 
