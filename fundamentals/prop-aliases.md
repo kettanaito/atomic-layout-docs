@@ -31,10 +31,14 @@ Each prop alias is associated with a single, or multiple corresponding CSS prope
 | `autoCols` | [`grid-auto-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns) |
 | `autoFlow` | [`grid-auto-flow`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow) |
 
-## Positioning
+## Alignment
 
 | **Prop name** | **CSS property** |
 | :--- | :--- |
+| `flexDirection` | [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) |
+| `flexShrink` | [`flex-shrink`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink) |
+| `flexGrow` | [`flex-grow`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow) |
+| `flexWrap` | [`flex-wrap`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap) |
 | `align` | [`align-self`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self) |
 | `alignItems` | [`align-items`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) |
 | `alignContent` | [`align-content`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content) |
