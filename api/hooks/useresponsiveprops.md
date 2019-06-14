@@ -1,5 +1,7 @@
 # useResponsiveProps
 
+A hook that makes any React component to support [Responsive props](../../fundamentals/responsive-props.md) by proxying given props based on the current viewport dimensions.
+
 Accepts an Object of responsive props and returns an Object of pure props relevant to the current viewport. Breakpoint name and behavior is stripped out from the pure props.
 
 ### Definition

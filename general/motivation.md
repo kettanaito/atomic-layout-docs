@@ -6,6 +6,16 @@ Inspired by [atomic design](http://bradfrost.com/blog/post/atomic-web-design), A
 
 ## Core principles
 
+### Semantics
+
+Atomic layout is strict about its semantics. That's why we use the term "Composition" instead of "Grid", "Row", or "Column" as most of the other solutions do.
+
+Semantically, grid is a _composition_ of rows and columns. In fact, any UI element is a composition of its sub-elements, making Composition far more powerful and non-restricting concept than explicit grid/row/column.
+
+Encouraging declarative layout definition, Atomic layout leverages the concept of Composition over grid or flexbox, which is are implementational details over how the layout is achieved. With Composition you express an intent and semantical combination of layout elements, not paying attention to how they are actually implemented. Think of it as `React.Component` for layout definition: it's a common pattern to declare any layout piece.
+
+> It would be ridiculous to have `React.Dropdown` to implement dropdowns, and `React.Image` to implement images.
+
 ### Physical composition
 
 Imagine that you can render a composition as a component. It doesn't do anything on its own, but rather acts like a glue that describes elements relation.
