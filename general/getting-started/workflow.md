@@ -1,9 +1,5 @@
 # Workflow
 
-This section is going to demonstrate how the workflow with Atomic layout looks like. It's highly recommended you read through the Getting started guidelines first. 
-
-{% page-ref page="./" %}
-
 ## Declarative
 
 The biggest difference when working with Atomic layout is that you **declare** what your layout suppose to look like, without explicitly telling how to achieve it.
