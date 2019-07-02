@@ -2,7 +2,7 @@
 
 ## Declarative
 
-The biggest difference when working with Atomic layout is that you **declare** what your layout suppose to look like, without explicitly telling how to achieve it.
+The biggest difference when working with Atomic layout is that you declare what your layout should look like, without exactly telling how to achieve it.
 
 There are multipe components exported by the library, but for the sake of demonstration the `Composition` component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
 
