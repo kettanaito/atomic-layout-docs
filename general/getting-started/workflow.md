@@ -4,17 +4,13 @@
 
 The biggest difference when working with Atomic layout is that you **declare** what your layout suppose to look like, without explicitly telling how to achieve it.
 
-There are multipe components exported by the library, but for the sake of demonstration the Composition component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
-
-Make sure to read through the list of all components:
-
-{% page-ref page="../../api/components/" %}
+There are multipe components exported by the library, but for the sake of demonstration the `Composition` component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
 
 ## Creating a composition
 
 ### Import
 
-Start from importing a `Composition` React component:
+Start from importing a `Composition` component:
 
 ```jsx
 import { Composition } from 'atomic-layout'
@@ -22,7 +18,7 @@ import { Composition } from 'atomic-layout'
 
 ### Define layout areas
 
-Now describe your layout in a verbose `grid-template-areas` syntax. You can use single- or multiline strings as areas.
+Now describe your layout in a verbose [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax. You can use single- or multiline strings as areas.
 
 ```jsx
 import React from 'react'
@@ -44,12 +40,12 @@ const areasTablet = `
 ```
 
 {% hint style="warning" %}
-Note that the position of an area within the template string affects where the area is rendered.
+Note that the position of an area within the template string affects where the area is being rendered on the page.
 {% endhint %}
 
 ### Configure composition
 
-Pass the defined template string as the values of respective `areas` props of the `Composition` component:
+Pass the defined areas string as the value of respective `areas` props of the `Composition` component:
 
 ```jsx
 import React from 'react'
@@ -80,7 +76,7 @@ const Page = () => (
 export default Page
 ```
 
-Notice how we can apply different template strings based on breakpoints by suffixing a template prop with a breakpoint name. Atomic layout will automatically apply the given template string on the specified breakpoint.
+Notice how we can apply different template strings based on breakpoints by suffixing a template prop with a breakpoint name \(`areas` + `md` = `areasMd`\). Atomic layout will automatically apply the given template string on the specified breakpoint.
 
 {% page-ref page="../../fundamentals/responsive-props.md" %}
 
