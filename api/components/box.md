@@ -10,7 +10,7 @@ Box has no control over elements' composition. **Use** [**Composition**](composi
 
 ## Props
 
-Box supports all [Prop aliases](../../fundamentals/prop-aliases.md), **except** those specific to CSS Grid.
+Box supports all [Prop aliases](../../fundamentals/prop-aliases.md), _except_ those specific to CSS Grid.
 
 | Prop name | Type | Description |
 | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ import React from 'react'
 import { Box } from 'atomic-layout'
 
 const Header = ({ children }) => (
-  <Box paddingVertical={10} paddingVerticalMd={20}>
+  <Box as="header" padding={10} paddingMd={20}>
     {children}
   </Box>
 )

@@ -25,7 +25,7 @@ Layout is meant to be configured **once**, on the root level of your application
 import Layout from 'atomic-layout'
 
 Layout.configure({
-    defaultUnit: 'rem',
+  defaultUnit: 'rem',
 })
 ```
 {% endcode-tabs-item %}
@@ -54,7 +54,7 @@ Layout.configure({
 import Layout from 'atomic-layout'
 
 Layout.configure({
-    defaultBehavior: 'down',
+  defaultBehavior: 'down',
 })
 ```
 {% endcode-tabs-item %}
@@ -64,8 +64,8 @@ Layout.configure({
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
-    template={...}
-    templateMd={...} />
+  template={...}
+  templateMd={...} />
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -83,22 +83,22 @@ Template prop value is applied for `md` breakpoint and _down_, as contrary to th
 
 ```typescript
 type TBreakpoint = {
-    minHeight?: number,
-    maxHeight?: number,
-    minWidth?: number,
-    maxWidth?: number,
-    minResolution?: string,
-    maxResolution?: string,
-    aspectRatio?: string,
-    minAspectRatio?: string,
-    maxAspectRatio?: string,
-    scan?: 'interlace' | 'progressive',
-    orientation?: 'portrait' | 'landscape',
-    displayMode?: 'fullscreen' | 'standalone' | 'minimal-ui' | 'browser',
+  minHeight?: number,
+  maxHeight?: number,
+  minWidth?: number,
+  maxWidth?: number,
+  minResolution?: string,
+  maxResolution?: string,
+  aspectRatio?: string,
+  minAspectRatio?: string,
+  maxAspectRatio?: string,
+  scan?: 'interlace' | 'progressive',
+  orientation?: 'portrait' | 'landscape',
+  displayMode?: 'fullscreen' | 'standalone' | 'minimal-ui' | 'browser',
 }
 
 type TBreakpoints = {
-    [breakpointName: string]: TBreakpoint,
+  [breakpointName: string]: TBreakpoint,
 }
 ```
 
@@ -110,18 +110,18 @@ type TBreakpoints = {
 import Layout from 'atomic-layout'
 
 Layout.configure({
-    breakpoints: {
-        mobile: {
-            maxWidth: 500,
-        },
-        tablet: {
-            minWidth: 501,
-            maxWidth: 764,
-        },
-        retina: {
-            minResolution: '300dpi',
-        },
+  breakpoints: {
+    mobile: {
+      maxWidth: 500,
     },
+    tablet: {
+      minWidth: 501,
+      maxWidth: 764,
+    },
+    retina: {
+      minResolution: '300dpi',
+    },
+  },
 })
 ```
 {% endcode-tabs-item %}
@@ -131,9 +131,9 @@ Layout.configure({
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
-    areasMobile={...}
-    areasTablet={...}
-    paddingRetina={10} />
+  areasMobile={...}
+  areasTablet={...}
+  paddingRetina={10} />
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -157,15 +157,15 @@ Make sure to explicitly provide a [default breakpoint name](configure.md#default
 import Layout from 'atomic-layout'
 
 Layout.configure({
-    defaultBreakpointName: 'mobile',
-    breakpoints: {
-        mobile: {
-            maxWidth: 576,
-        },
-        desktop: {
-            minWidth: 768,
-        },
+  defaultBreakpointName: 'mobile',
+  breakpoints: {
+    mobile: {
+      maxWidth: 576,
     },
+    desktop: {
+      minWidth: 768,
+    },
+  },
 })
 ```
 {% endcode-tabs-item %}
@@ -175,8 +175,8 @@ Layout.configure({
 {% code-tabs-item title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
-    padding={...}
-    paddingDesktop={...} />
+  padding={...}
+  paddingDesktop={...} />
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}

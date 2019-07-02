@@ -7,7 +7,7 @@ Accepts an Object of responsive props and returns an Object of pure props releva
 ### Definition
 
 ```typescript
-type UseResponsiveProps<Props> = (Props) => Partial<Props>
+type UseResponsiveProps<Props> = (props) => Partial<Props>
 ```
 
 ### Example
