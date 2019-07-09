@@ -38,7 +38,7 @@ This launches `webpack-dev-server` in watch mode to bundle the library upon any 
 #### Run Storybook
 
 ```bash
-yarn run storybook
+yarn storybook
 ```
 
 We develop in stories using [Storybook](https://github.com/storybooks/storybook). Create a story for your feature, or a bugfix scenario, and point your browser to the Storybook port after running the command above.
