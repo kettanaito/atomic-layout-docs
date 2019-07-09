@@ -1,6 +1,6 @@
 # useViewportChange
 
-Executes a given callback whenever a viewport change occurs.
+Executes a given callback upon each viewport change \(i.e. window resize\).
 
 {% hint style="info" %}
 Viewport change \(window resize\) is debounced by default.

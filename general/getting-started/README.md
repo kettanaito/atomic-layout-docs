@@ -42,9 +42,7 @@ Now is a good time to learn some pillars of Atomic layout. Get familiar with bre
 
 ## Best practices
 
-After you have given it a solid round of practice, it is good to see how others utilize Atomic layout at its best. We have prepared a set of hand-picked advices and patterns to bring your layouts to the next level.
-
-{% page-ref page="../recipes/" %}
+After you have given it a solid round of practice, it is good to see how others utilize Atomic layout at its best. We have prepared a set of hand-picked pieces of advice and patterns to bring your layouts to the next level.
 
 {% hint style="info" %}
 Got a suggestion to improve this guide? Please [create an issue](https://github.com/kettanaito/atomic-layout/issues) immediately!

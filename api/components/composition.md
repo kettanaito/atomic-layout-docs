@@ -36,7 +36,7 @@ Template string is just an alias for [`grid-template-areas`](https://developer.m
 Since Atomic layout comes with responsive built-in, you can define multiple layout templates for a single composition based on the [breakpoints](../../fundamentals/breakpoints.md) of your layout.
 
 ```jsx
-const templateTablet = `
+const areasTablet = `
   logo menu
   search search
 `
@@ -124,9 +124,9 @@ const ArtistCard = ({ title, imageUrl, description }) => (
   <Composition
     areas={areasMobile}
     areasMd={areasDesktop}
-    gutter={1}
-    gutterMd={2}
-    padding={1}>
+    gap={10}
+    gapMd={20}
+    padding={10}>
     {({ Thumbnail, Heading, Content }) => (
       <>
         <Thumbnail>
@@ -212,8 +212,8 @@ const ArtistContent = ({ description, publishDate, onShareClick }) => (
   <Composition
     areas={areasMobile}
     areasMd={areasTablet}
-    gutter="10"
-    gutterMd="15">
+    gap={10}
+    gapMd={20}>
     {({ Meta, Actions, Text }) => (
       <>
         <Meta>

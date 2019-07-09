@@ -9,7 +9,7 @@ Responsive is a crucial part of any layout implementation. That's why its concep
 
 In this section we are going to take a look at how to implement these fundamentals. Make sure to be familiar with the basics of Atomic layout before you continue reading.
 
-{% page-ref page="../getting-started/" %}
+{% page-ref page="../general/getting-started/" %}
 
 ## Responsive areas
 
@@ -83,7 +83,7 @@ The composition above will wrap `Meta` grid area in a `<MediaQuery/>` component 
 
 Any prop name suffixed with a breakpoint name becomes responsive. This means that its value is applied at the given breakpoint.
 
-{% page-ref page="../../fundamentals/responsive-props.md" %}
+{% page-ref page="../fundamentals/responsive-props.md" %}
 
 We have already used a responsive prop in the example above. By suffixing `template` with the `Lg`, we stated that the given value must be applied on the `lg` breakpoint and up. Following this example, let's create a different gutter between the grid areas on different breakpoints:
 
@@ -110,7 +110,7 @@ There are two props we have added: `gutter` and `gutterLg`.
 * `gutterLg` adds a `grid-gap` of `20px` on large screens and up, since `up` is the default behavior.
 
 {% hint style="info" %}
-You can configure [custom breakpoints](../../fundamentals/breakpoints.md#custom-breakpoints), default breakpoint and default behavior. Responsive props will abide by your settings.
+You can configure [custom breakpoints](../fundamentals/breakpoints.md#custom-breakpoints), default breakpoint and default behavior. Responsive props will abide by your settings.
 {% endhint %}
 
 

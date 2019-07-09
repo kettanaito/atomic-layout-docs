@@ -4,7 +4,7 @@
 
 The biggest difference when working with Atomic layout is that you declare what your layout should look like, without exactly telling how to achieve it.
 
-There are multipe components exported by the library, but for the sake of demonstration the `Composition` component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
+There are multiple components exported by the library, but for the sake of demonstration the `Composition` component will be used. It's a good medium between features and complexity, and one of the most prominent APIs of the library.
 
 ## Creating a composition
 
@@ -18,7 +18,7 @@ import { Composition } from 'atomic-layout'
 
 ### Define layout areas
 
-Now describe your layout in a verbose [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax. You can use single- or multiline strings as areas.
+Now describe your layout in a verbose [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) syntax. You can use single- or multi-line strings as areas.
 
 ```jsx
 import React from 'react'

@@ -8,10 +8,6 @@
 * [Getting started](general/getting-started/README.md)
   * [Installation](general/getting-started/installation.md)
   * [Workflow](general/getting-started/workflow.md)
-* [Recipes](general/recipes/README.md)
-  * [Semantics](general/recipes/semantics.md)
-  * [Iterative areas](general/recipes/iterative-areas.md)
-  * [Responsive layout](general/recipes/responsive-layout.md)
 
 ## Fundamentals
 
@@ -32,6 +28,12 @@
   * [useBreakpointChange](api/hooks/use-breakpoint-change.md)
   * [useResponsiveValue](api/hooks/use-responsive-value.md)
   * [useResponsiveProps](api/hooks/useresponsiveprops.md)
+
+## Recipes
+
+* [Semantics](recipes/semantics.md)
+* [Iterative areas](recipes/iterative-areas.md)
+* [Responsive layout](recipes/responsive-layout.md)
 
 ## Developers
 
