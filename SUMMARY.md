@@ -32,6 +32,7 @@
 ## Recipes
 
 * [Semantics](recipes/semantics.md)
+* [Namespaces](recipes/namespaces.md)
 * [Iterative areas](recipes/iterative-areas.md)
 * [Responsive layout](recipes/responsive-layout.md)
 

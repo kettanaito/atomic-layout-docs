@@ -19,7 +19,7 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 ## Advantages
 
-* Tiny, around **6 Kb gzipped**!
+* Tiny, only **4 Kb gzipped**!
 * Based on standardized CSS Grid, no hacks or polyfills
 * Supported in more than [**93%**](https://caniuse.com/#search=css%20grid) of browsers worldwide
 * Encourages consistent, maintainable layout declaration
