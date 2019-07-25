@@ -72,7 +72,7 @@ Ideas encouraged by Atomic layout may be hard to understand at first. However, b
 
 In Bootstrap you have a grid system that sits on top of your page and serves as a ruler to snap the elements to. Once the amount of grid columns is specified, you start placing some components relatively to those columns.
 
-![Bootstrap grid visualization](../.gitbook/assets/bootstrap-grid%20%283%29.png)
+![Bootstrap grid visualization](../.gitbook/assets/bootstrap-grid%20%281%29.png)
 
 That kind of grid cannot be applied to each individual component you render, thus forcing you to write additional CSS to implement what appears but a regular composition. This is a primary problem Atomic layout aims to resolve.
 
@@ -80,7 +80,7 @@ That kind of grid cannot be applied to each individual component you render, thu
 
 Now in Atomic layout **anything** **can be a composition and a composite at the same time**. A grid is a composition of rows and columns, and a header is a composition of logo, menu and actions.
 
-![Atomic layout visualization](../.gitbook/assets/atomic-layout%20%282%29.png)
+![Atomic layout visualization](../.gitbook/assets/atomic-layout.png)
 
 > ### **It is like a grid that goes all the way down, to the furthest leaves of an interface tree.**
 

@@ -1,13 +1,40 @@
 # Introduction
 
-[Atomic layout](https://github.com/kettanaito/atomic-layout) is a spatial distribution library for React. It uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) to define layout areas and render them as React components. This pattern encourages separation of elements and spacing, preventing contextual implementations and boosting maintenance of layouts.
+[Atomic layout](https://github.com/kettanaito/atomic-layout) is a spatial distribution library for React. It uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) to define layout areas and render them as React components_._ You control spacing between the areas in a dedicated layer called _Composition_. Since the position and spacing is contextless that way, you achieve ultimate separation of concerns and boost maintenance of your components.
 
-## Goals
+## Encouragements
 
-* **Immutable**. Stop coupling spacing with your components. Have a dedicated composition layer that handles components relation, ensuring immutable layouts.
-* **Physical composition**. ****Allow to treat spacing and composition as physical components.
-* **Standardized layout declaration**. Imagine opening any layout part of the project and being able to understand and adjust it in seconds.
-* **Faster development speed**. Best practices and patterns immediately at your disposal.
+To understand why Atomic layout is beneficial for you take a look at some of the practices it encourages:
+
+* **Separation of concerns**. What elements are rendered and what is the relation between them are now two independent paradigms in your code. Forget about CSS hacks and contextual tweaks.
+* **Composition as a physical component**. We build applications with composability in mind. Adopted from the design world, we, engineers, can wield the power of composition because it's an actual React component. "_A page is a composition of header, body, and footer_"—that's not just an explanation from a designer anymore, but an actual code you would write. Literally:
+
+```jsx
+import React from 'react'
+import { Composition } from 'atomic-layout'
+
+const areas = `
+  header
+  body
+  footer
+`
+
+const Page = () => (
+  <Composition areas={areas}>
+    {({ Header, Body, Footer }) => (
+      <Header>{...}</Header>
+      <Body>{...}</Body>
+      <Footer>{...}</Footer>
+    )}
+  </Composition>
+)
+```
+
+* **Unification at any scale**. Any component written with Atomic layout has the same declaration structure. Browsing such code is quick, refactoring is predictable, and maintenance is painless.
+
+## Getting started
+
+{% page-ref page="general/getting-started/" %}
 
 ## Motivation
 
@@ -17,20 +44,10 @@ Atomic layout exposes you a separate layer responsible for the spacial distribut
 
 {% page-ref page="general/motivation.md" %}
 
-## Advantages
+## Not convinced yet?
 
-* Tiny, only **4 Kb gzipped**!
-* Based on standardized CSS Grid, no hacks or polyfills
-* Supported in more than [**93%**](https://caniuse.com/#search=css%20grid) of browsers worldwide
-* Encourages consistent, maintainable layout declaration
+* Lightweight \(~**4 Kb gzipped**\)
+* Based on the standardized CSS Grid \(no hacks or polyfills\)
+* Supported in [**93+%**](https://caniuse.com/#search=css%20grid) of browsers worldwide
 * Supports [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
-* Keeps layout composites immutable and predictable
-
-## How does it work?
-
-Atomic layout uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout). During the layout composition you define which layout areas are present, configure their relation, and render your components in those areas.
-
-Get a more profound understanding of how the library works by following these example-based guidelines:
-
-{% page-ref page="general/getting-started/" %}
 

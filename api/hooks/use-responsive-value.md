@@ -1,6 +1,6 @@
 # useResponsiveValue
 
-Returns a value based on the given breakpoint-value pairs. Whenever viewport matches a given breakpoint, its associated value is returned. When no breakpoinst are matched, the default value is returned.
+Returns a value based on the given breakpoint-value pairs. Whenever viewport matches a given breakpoint, its associated value is returned.  Returns the default value, if any, when no breakpoints are matched.
 
 ### Definition
 
@@ -14,14 +14,21 @@ type useResponsiveValue<T> = (
 ### Example
 
 ```jsx
+import React from 'react'
 import { useResponsiveValue } from 'atomic-layout'
 
 const ReadTime = ({ duration }) => {
-  const caption = useResponsiveValue({
-    xs: 'min.',
-  }, 'minutes(s)')
+  // Truncate a label caption based on the viewport
+  const caption = useResponsiveValue(
+    {
+      // Use contraction on extra-small devices
+      xs: 'min.',
+    },
+    // On all other breakpoints use the full label
+    'minutes(s)'
+  )
   
-  return <p>{duration} {caption}</p>
+  return <p>Reading duration: {duration} {caption}</p>
 })
 ```
 

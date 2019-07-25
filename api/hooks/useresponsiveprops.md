@@ -7,24 +7,28 @@ Accepts an Object of responsive props and returns an Object of pure props releva
 ### Definition
 
 ```typescript
-type UseResponsiveProps<Props> = (props) => Partial<Props>
+type UseResponsiveProps<Props> = (props: Props) => Partial<Props>
 ```
 
 ### Example
 
 ```jsx
+import React from 'react'
 import { useResponsiveProps } from 'atomic-layout'
 
 const Avatar = (props) => {
-  const { size } = useResponsiveProps(props)
+  const { url } = useResponsiveProps(props)
   
-  return <Image size={size} />
+  return <img src={url} />
 }
 ```
 
-Now the created `Avatar` component supports a `size` prop as a responsive prop:
+Now the created `Avatar` component supports a `url` prop as a responsive prop:
 
 ```jsx
-<Avatar size={100} sizeMd={200} sizeLg={300} />
+<Avatar
+  url="https://backend.dev/avatar/100x100"
+  urlMd="https://backend.dev/avatar/250x250"
+  urlLg="https://backend.dev/avatar/500x500" />
 ```
 

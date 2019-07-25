@@ -1,9 +1,9 @@
 # useBreakpointChange
 
-Executes a given callback function whenever a breakpoint changes.
+Executes a given callback function whenever a breakpoint changes. Provides a breakpoint name that matches the current viewport as the first argument.
 
 {% hint style="info" %}
-Breakpoint change is based on [`useViewportChange`](use-viewport-change.md), and is also debounced.
+Breakpoint changes are based on [`useViewportChange`](use-viewport-change.md), and are also debounced.
 {% endhint %}
 
 ### Definition
@@ -18,7 +18,7 @@ type useBreakpointChange = (
 ### Example
 
 ```jsx
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useBreakpointChange } from 'atomic-layout'
 
 const Component = () => {

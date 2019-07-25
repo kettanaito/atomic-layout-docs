@@ -1,9 +1,9 @@
 # useViewportChange
 
-Executes a given callback upon each viewport change \(i.e. window resize\).
+Executes a given callback on every viewport change \(i.e. window resize\).
 
 {% hint style="info" %}
-Viewport change \(window resize\) is debounced by default.
+Viewport changes are debounced by default.
 {% endhint %}
 
 ### Definition
@@ -18,15 +18,17 @@ type useViewportChange = (
 ### Example
 
 ```jsx
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useViewportChange } from 'atomic-layout'
 
-const Foo = () => {
-  const [state, setState] = useState()
+const StickyPanel = ({ target }) => {
+  const [topOffset, setOffset] = useState(0)
   
   useViewportChange(() => {
-    setState(updateStateBasedOnViewport)
+    setOffset(target.y)
   })
+  
+  return ()
 }
 ```
 

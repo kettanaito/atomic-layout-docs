@@ -1,6 +1,6 @@
 # Breakpoints
 
-Breakpoint is a description of a condition when a layout acquires a new state. Such condition is often based on device's characteristics \(i.e. screen size, resolution, orientation\).
+Breakpoint is a condition upon which layout acquires a new state. Such condition is often based on device's characteristics \(i.e. screen size, resolution, orientation\).
 
 {% hint style="success" %}
 Atomic layout operates with the same breakpoints you would use in plain CSS media queries.

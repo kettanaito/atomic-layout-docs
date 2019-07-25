@@ -35,6 +35,7 @@
 * [Namespaces](recipes/namespaces.md)
 * [Iterative areas](recipes/iterative-areas.md)
 * [Responsive layout](recipes/responsive-layout.md)
+* [Custom media query](recipes/custom-media-query.md)
 
 ## Developers
 
