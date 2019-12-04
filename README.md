@@ -22,9 +22,11 @@ const areas = `
 const Page = () => (
   <Composition areas={areas}>
     {({ Header, Body, Footer }) => (
-      <Header>{...}</Header>
-      <Body>{...}</Body>
-      <Footer>{...}</Footer>
+      <>
+        <Header>{...}</Header>
+        <Body>{...}</Body>
+        <Footer>{...}</Footer>
+      </>
     )}
   </Composition>
 )
