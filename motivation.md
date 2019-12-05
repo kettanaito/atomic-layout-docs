@@ -66,7 +66,7 @@ Having responsive design has become a must in the modern web development. In fac
 
 ## Comparison
 
-Ideas encouraged by Atomic Layout may be hard to understand at first. However, by comparing it to one of the most popular frameworks for user interfaces you can immediately get the high-level overview of what Atomic Layout is about.
+Ideas encouraged by Atomic Layout may be hard to understand at first. However, by comparing it to one of the most popular frameworks for building user interfaces you can immediately get the high-level overview of what Atomic Layout is about.
 
 ### Bootstrap
 
