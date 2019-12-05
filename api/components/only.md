@@ -18,16 +18,17 @@
 ### Explicit breakpoint
 
 ```jsx
+import React from 'react'
 import { Only } from 'atomic-layout'
 
 const Post = () => (
   <>
-    {/* Refer to defined breakpoints by name */}
+    {/* Refer to a breakpoint defined in "Layout.configure()" by name */}
     <Only for="sm">
       <p>Renders on "sm" breakpoint</p>
     </Only>
     
-    {/* Provide explicit breakpoint objects */}
+    {/* Or, provide a custom breakpoint object */}
     <Only for={{ minWidth: 900, maxWidth: 1000 }}>
       <p>Renders on the custom breakpoint</p>
     </Only>
@@ -35,11 +36,14 @@ const Post = () => (
 )
 ```
 
+## Display models
+
 ### High-pass
 
-High-pass is a display model where the content is shown after a specified breakpoint.
+High-pass is a display model where the content is shown after a specified breakpoint \(incl.\).
 
 ```jsx
+import React from 'react'
 import { Only } from 'atomic-layout'
 
 const Post = () => (
@@ -54,6 +58,7 @@ const Post = () => (
 Low-pass is a display model where the content is displayed prior to a specified breakpoint.
 
 ```jsx
+import React from 'react'
 import { Only } from 'atomic-layout'
 
 const Post = () => (
@@ -68,6 +73,7 @@ const Post = () => (
 Bell is a combination of low-pass and high-pass display models. The content is displayed starting from a certain breakpoint, and displayed prior to a certain breakpoint.
 
 ```jsx
+import React from 'react'
 import { Only } from 'atomic-layout'
 
 const Post = () => (
@@ -82,6 +88,7 @@ const Post = () => (
 Notch is the reversed variant of the Bell behavior: the content is rendered everywhere **except** the given breakpoints range.
 
 ```jsx
+import React from 'react'
 import { Only } from 'atomic-layout'
 
 const Post = () => (
@@ -93,7 +100,7 @@ const Post = () => (
 
 ### Standalone usage
 
-This component can be used independently from any other components.
+This component can be used independently from any other components of the library.
 
 ```jsx
 import React from 'react'

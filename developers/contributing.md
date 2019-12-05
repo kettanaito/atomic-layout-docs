@@ -1,6 +1,6 @@
 # Contributing
 
-First of all, thank you for deciding to contribute to how developers create layouts! Follow these straightforward instructions below to get started, and see each other in pull request review!
+Thank you for deciding to contribute to Atomic Layout! Please read through the instructions below to make sure your contributing experience is smooth and pleasant.
 
 ## Pre-requisites
 
@@ -13,19 +13,21 @@ You will have much more confidence and meaningful contributions being familiar w
 
 ## Getting started
 
-### 0. Prepare
+### Prepare
 
 1. Fork [the repository](https://github.com/kettanaito/atomic-layout),
 2. Checkout the forked directory,
 3. Install dependencies via `yarn install`
 
-### 1. Create a feature/bugfix branch
+> Atomic Layout uses Yarn as a package manager. Please also use Yarn during your localo development. Thanks.
+
+### Create a feature/bugfix branch
 
 ```bash
 git checkout -b {ISSUE_NUMBER}-{BRANCH_NAME}
 ```
 
-### 2. Develop
+### Develop
 
 #### Run development server
 
@@ -33,7 +35,7 @@ git checkout -b {ISSUE_NUMBER}-{BRANCH_NAME}
 yarn start
 ```
 
-This launches `webpack-dev-server` in watch mode to bundle the library upon any change. Pay attention to the useful messages and warnings in the terminal during the process.
+This launches `webpack-dev-server` in a watch mode to bundle the library upon any change. Pay attention to messages and warnings in the terminal during the process.
 
 #### Run Storybook
 
@@ -43,25 +45,54 @@ yarn storybook
 
 We develop in stories using [Storybook](https://github.com/storybooks/storybook). Create a story for your feature, or a bugfix scenario, and point your browser to the Storybook port after running the command above.
 
-### 3. Commit the changes
+### Build \(optional\)
+
+Atomic Layout ships in the following module types:
+
+* **CommonJS \(default\)**
+* ESM
+* UMD
+
+ You may want to build the library for a specific module type for debugging purposes. Follow the instructions below to do that.
+
+| Command | Description |
+| :--- | :--- |
+| `yarn build:all` | Builds all module types. |
+| `yarn build:cjs` | Performs the default build \(CJS\). |
+| `yarn build:esm` | Builds the ESM module. |
+| `yarn build:umd` | Builds the UMD module. |
+
+To use a certain module type build in Storybook you need to provide the `TARGET` environmental variable when running any Storybook command. For example, this launches a local Storybook with the ESM module of the library:
 
 ```bash
-git commit -am 'Introduces ABC'
+$ TARGET=esm yarn storybook
 ```
 
-### 4. Keep your branch up-to-date
+To build Storybook using a certain module type provide its name in the same `TARGET` environmental variable during the build:
+
+```bash
+$ yarn build:storybook:esm
+```
+
+### Commit the changes
+
+```bash
+git commit -am 'Introduces new feature'
+```
+
+### Keep your feature branch up-to-date
 
 ```bash
 git checkout {TARGET_BRANCH}
-git pull
+git pull --rebase
 git checkout {FEATURE_BRANCH}
-git merge {TARGET_BRANCH}
+git rebase {TARGET_BRANCH}
 ```
 
-### 5. Create a pull request
+### Create a pull request
 
 1. Go to [https://github.com/kettanaito/atomic-layout/compare](https://github.com/kettanaito/atomic-layout/compare),
-2. Select the feature branch from your fork and the target branch from Atomic layout,
+2. Select the feature branch from your fork and the target branch from Atomic Layout,
 3. Fill in the pull request template with patience,
 4. Undergo a code review,
 5. Witness your changes in the repository!

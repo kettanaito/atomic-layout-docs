@@ -1,13 +1,16 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Motivation](motivation.md)
+* [Resources](resources.md)
+* [FAQ](faq.md)
 
-## General
+## Getting started
 
-* [Motivation](general/motivation.md)
-* [Getting started](general/getting-started/README.md)
-  * [Installation](general/getting-started/installation.md)
-  * [Workflow](general/getting-started/workflow.md)
+* [Installation](getting-started/installation.md)
+* [First composition](getting-started/first-composition.md)
+* [Responsive composition](getting-started/responsive-composition.md)
+* [Nested composition](getting-started/nested-composition.md)
 
 ## Fundamentals
 
@@ -35,7 +38,7 @@
 * [Namespaces](recipes/namespaces.md)
 * [Iterative areas](recipes/iterative-areas.md)
 * [Responsive layout](recipes/responsive-layout.md)
-* [Custom media query](recipes/custom-media-query.md)
+* [Responsive styles](recipes/explicit-media-query.md)
 
 ## Developers
 

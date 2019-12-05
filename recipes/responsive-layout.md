@@ -1,15 +1,15 @@
 # Responsive layout
 
-Responsive is a crucial part of any layout implementation. That's why its concept lies in the core of Atomic layout design, as responsive is integrated by default.
+Responsive is a crucial part of any layout implementation. That's why its concept lies in the core of Atomic Layout design, as responsive is integrated by default.
 
 **Implementation of responsive layout has two parts:**
 
 1. Conditional \(responsive\) areas;
 2. Conditional props assignment \(`gutter`, `margin`, etc.\);
 
-In this section we are going to take a look at how to implement these fundamentals. Make sure to be familiar with the basics of Atomic layout before you continue reading.
+In this section we are going to take a look at how to implement these fundamentals. Make sure to be familiar with the basics of the library before you continue reading.
 
-{% page-ref page="../general/getting-started/" %}
+{% page-ref page="../resources.md" %}
 
 ## Responsive areas
 
@@ -63,12 +63,12 @@ const Card = () => (
   <Composition
     areas={areasMobile}
     areasLg={areasDesktop}>
-    {({ Thumbnail, Heading, Subheading, Meta }) => (
+    {(Areas) => (
       <>
-        <Thumbnail>I am rendered always</Thumbnail>
-        <Heading>I am rendered always</Heading>
-        <Subheading>I am rendered always</Subheading>
-        <Meta>I am rendered on "lg" breakpoint and up!</Meta>
+        <Areas.Thumbnail>I am rendered always</Areas.Thumbnail>
+        <Areas.Heading>I am rendered always</Areas.Heading>
+        <Areas.Subheading>I am rendered always</Areas.Subheading>
+        <Areas.Meta>I am rendered on "lg" breakpoint and up!</Areas.Meta>
       </>
     )}
   </Composition>
@@ -93,12 +93,12 @@ We have already used a responsive prop in the example above. By suffixing `templ
   areasLg={areasDesktop}
   gutter={10}
   gutterLg={20}>
-  {({ Thumbnail, Heading, Subheading, Meta }) => (
+  {(Areas) => (
     <>
-      <Thumbnail>I am rendered always</Thumbnail>
-      <Heading>I am rendered always</Heading>
-      <Subheading>I am rendered always</Subheading>
-      <Meta>I am rendered on "lg" breakpoint and up!</Meta>
+      <Areas.Thumbnail>I am rendered always</Areas.Thumbnail>
+      <Areas.Heading>I am rendered always</Areas.Heading>
+      <Areas.Subheading>I am rendered always</Areas.Subheading>
+      <Areas.Meta>I am rendered on "lg" breakpoint and up!</Areas.Meta>
     </>
   )}
 </Composition>

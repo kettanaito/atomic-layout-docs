@@ -1,9 +1,11 @@
 # Breakpoints
 
-Breakpoint is a condition upon which layout acquires a new state. Such condition is often based on device's characteristics \(i.e. screen size, resolution, orientation\).
+## What is a "breakpoint"?
+
+Breakpoint is a condition upon which layout acquires a new state. Such condition is often based on a device's characteristics like screen size, resolution, orientation, and others.
 
 {% hint style="success" %}
-Atomic layout operates with the same breakpoints you would use in plain CSS media queries.
+Atomic Layout operates with the same breakpoints you would use in plain CSS media queries.
 {% endhint %}
 
 ## Properties
@@ -33,7 +35,7 @@ Whenever a component's prop is not suffixed by a breakpoint name, a default brea
 
 ## Default breakpoints
 
-Atomic layout uses [Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options) and mobile-first behavior by default.
+Atomic Layout uses [Bootstrap 4 Grid breakpoints](https://getbootstrap.com/docs/4.0/layout/grid/#grid-options) and mobile-first behavior by default.
 
 | **Breakpoint name** | **xs \(default\)** | **sm** | **md** | **lg** | **xl** |
 | :---: | :---: | :---: | :---: | :---: | :---: |

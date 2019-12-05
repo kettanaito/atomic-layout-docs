@@ -103,8 +103,7 @@ Note that using the Box component is recommended when you don't wish to control 
 
 ### Simple composition
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/ArtistCard/index.jsx" %}
+{% code title="src/components/ArtistCard/index.jsx" %}
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
@@ -145,13 +144,11 @@ const ArtistCard = ({ title, imageUrl, description }) => (
 
 export default ArtistCard
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Nested composition
 
-{% code-tabs %}
-{% code-tabs-item title="components/ArtistCard/index.jsx" %}
+{% code title="components/ArtistCard/index.jsx" %}
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
@@ -188,11 +185,9 @@ const ArtistCard = ({
 
 export default ArtistCard
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="components/ArtistCard/ArtistContent.jsx" %}
+{% code title="components/ArtistCard/ArtistContent.jsx" %}
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
@@ -232,8 +227,7 @@ const ArtistContent = ({ description, publishDate, onShareClick }) => (
 
 export default ArtistContent
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

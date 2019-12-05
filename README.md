@@ -1,10 +1,10 @@
 # Introduction
 
-[Atomic layout](https://github.com/kettanaito/atomic-layout) is a spatial distribution library for React. It uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) to define layout areas and render them as React components_._ You control spacing between the areas in a dedicated layer called _Composition_. Since the position and spacing is contextless that way, you achieve ultimate separation of concerns and boost maintenance of your components.
+[Atomic Layout](https://github.com/kettanaito/atomic-layout) is a spatial distribution library for React. It uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) to define layout areas and render them as React components_._ You control spacing between the areas in a dedicated layer called _Composition_. Since the position and spacing is contextless that way, you achieve ultimate separation of concerns and boost maintenance of your components.
 
 ## Encouragements
 
-To understand why Atomic layout is beneficial for you take a look at some of the practices it encourages:
+To understand why Atomic Layout is beneficial for you take a look at some of the practices it encourages:
 
 * **Separation of concerns**. What elements are rendered and what is the relation between them are now two independent paradigms in your code. Forget about CSS hacks and contextual tweaks.
 * **Composition as a physical component**. We build applications with composability in mind. Adopted from the design world, we, engineers, can wield the power of composition because it's an actual React component. "_A page is a composition of header, body, and footer_"—that's not just an explanation from a designer anymore, but an actual code you would write. Literally:
@@ -32,24 +32,30 @@ const Page = () => (
 )
 ```
 
-* **Unification at any scale**. Any component written with Atomic layout has the same declaration structure. Browsing such code is quick, refactoring is predictable, and maintenance is painless.
+* **Unification at any scale**. Any component written with Atomic Layout has the same declaration structure. Browsing such code is quick, refactoring is predictable, and maintenance is painless.
 
 ## Getting started
 
-{% page-ref page="general/getting-started/" %}
+{% page-ref page="resources.md" %}
 
 ## Motivation
 
-Think of how you create layouts today. You most likely have a set of reusable units \(atoms\) so you can combine them into functional compositions. Units are simple and predictable, but once they become composites for layouts they acquire contextual spacing and positioning. So you apply additional CSS rules to them to ensure that behavior. **That makes elements contextual**, thus not predictable \(and also makes you write more CSS, nobody likes that\).
+One of the most popular ways to create layout nowadays is to combine a set of small, reusable components, often called "atoms", into a meaningful layout unit. Naturally, atoms have spacial relation between each other, which often depends on the context they are being rendered. However, when it comes to implementing this relation we often describe it, and all its variations, directly in the atom components, **making them irreversibly contextual**. Suddenly a plain button has a dozen of margin variations when in fact it should not be aware in which context it's included.
 
-Atomic layout exposes you a separate layer responsible for the spacial distribution between layout composites. Put simply, it allows you to set spacing and position of layout units **without mutating them**. That deprives from writing redundant CSS and ensures unit's predictability.
+The issue lies in the luck of standardized way to describe relation between layout units. Don't get me wrong: there are plenty of techniques and features in CSS, yet they are rather _tools_ than _concepts_. 
 
-{% page-ref page="general/motivation.md" %}
+This is why I've build Atomic Layout: to have a single spacial distribution layer, both conceptually and physically. It's meant to be a shell that controls how its children relate using concise declarative API. It uses powerful CSS features \(i.e. CSS Grid\) and provides you a high-level layout API, just as React uses DOM operations and gives you API of its own. That way I hope to encourage best practices and make UI development easy and fun.
+
+{% page-ref page="motivation.md" %}
 
 ## Not convinced yet?
 
-* Lightweight \(~**4 Kb gzipped**\)
-* Based on the standardized CSS Grid \(no hacks or polyfills\)
-* Supported in [**93+%**](https://caniuse.com/#search=css%20grid) of browsers worldwide
-* Supports [Responsive props](fundamentals/responsive-props.md) to create responsive layouts incredibly fast
+* Lightweight \(~**4 Kb gzipped**\);
+* Based on the standardized CSS Grid \(no hacks or polyfills\);
+* Supported in [**93+%**](https://caniuse.com/#search=css%20grid) of browsers worldwide;
+* Comes with versatile responsive API and useful React hooks;
+
+## Getting started
+
+{% page-ref page="getting-started/installation.md" %}
 

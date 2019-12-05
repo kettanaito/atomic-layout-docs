@@ -1,14 +1,16 @@
 # Prop aliases
 
+## What is a "prop alias"?
+
 Prop alias is a prop name shorthand that compiles into a single or multiple CSS properties.
 
 This feature is designed for convenience and development speed. These props can be assigned to any component exposed by the library, including the area components generated from your composition template strings.
 
 {% hint style="info" %}
-Values of prop aliases can be applied conditionally. **Read about** [**Responsive props**](responsive-props.md).
+Values of prop aliases can be applied conditionally. **See** [**Responsive props**](responsive-props.md).
 {% endhint %}
 
-Each prop alias is associated with a single, or multiple corresponding CSS properties. See the list of all aliases and their CSS properties in the tables below.
+Each prop alias is associated with a single, or multiple corresponding CSS properties. See the list of all aliases and the corresponding CSS properties in the tables below.
 
 ## Grid
 

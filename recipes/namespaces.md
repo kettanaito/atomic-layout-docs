@@ -1,6 +1,6 @@
 # Namespaces
 
-When using layout areas Atomic layout generates React components for each declared area:
+When using layout areas Atomic Layout generates React components for each declared area:
 
 ```jsx
 import React from 'react'

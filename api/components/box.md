@@ -19,6 +19,7 @@ Box supports all [Prop aliases](../../fundamentals/prop-aliases.md), _except_ th
 
 ## Example
 
+{% code title="" %}
 ```jsx
 import React from 'react'
 import { Box } from 'atomic-layout'
@@ -31,6 +32,7 @@ const Header = ({ children }) => (
 
 export default Header
 ```
+{% endcode %}
 
 
 

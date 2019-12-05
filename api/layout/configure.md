@@ -5,7 +5,7 @@
 Applies global layout configuration.
 
 {% hint style="warning" %}
-Layout is meant to be configured **once**, on the root level of your application.
+Layout is meant to be configured **once**, on the root level of your application. Make sure to call `Layout.configure()` only once, if necessary.
 {% endhint %}
 
 ## Options
@@ -19,8 +19,7 @@ Layout is meant to be configured **once**, on the root level of your application
 
 #### Example
 
-{% code-tabs %}
-{% code-tabs-item title="src/App.jsx" %}
+{% code title="src/App.jsx" %}
 ```jsx
 import Layout from 'atomic-layout'
 
@@ -28,16 +27,13 @@ Layout.configure({
   defaultUnit: 'rem',
 })
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/SomeComponent.jsx" %}
+{% code title="src/components/SomeComponent.jsx" %}
 ```jsx
-<Composition gutter={2} /> // reads as "2rem" of "grid-gap"
+<Composition gap={2} /> // reads as "2rem" of "grid-gap"
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### `defaultBehavior`
 
@@ -48,8 +44,7 @@ Layout.configure({
 
 #### Example
 
-{% code-tabs %}
-{% code-tabs-item title="src/App.jsx" %}
+{% code title="src/App.jsx" %}
 ```jsx
 import Layout from 'atomic-layout'
 
@@ -57,18 +52,15 @@ Layout.configure({
   defaultBehavior: 'down',
 })
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/SomeComponent.jsx" %}
+{% code title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
   template={...}
   templateMd={...} />
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Template prop value is applied for `md` breakpoint and _down_, as contrary to the default, mobile-first behavior, which applies the value from the given breakpoint and _up_.
 
@@ -104,8 +96,7 @@ type TBreakpoints = {
 
 #### Example
 
-{% code-tabs %}
-{% code-tabs-item title="src/App.jsx" %}
+{% code title="src/App.jsx" %}
 ```jsx
 import Layout from 'atomic-layout'
 
@@ -124,22 +115,19 @@ Layout.configure({
   },
 })
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/SomeComponent.jsx" %}
+{% code title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
   areasMobile={...}
   areasTablet={...}
   paddingRetina={10} />
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="warning" %}
-Make sure to explicitly provide a [default breakpoint name](configure.md#defaultbreakpointname) when using custom breakpoints, so Atomic layout knows when to apply props that have no breakpoint suffix.
+Make sure to explicitly provide a [default breakpoint name](configure.md#defaultbreakpointname) when using custom breakpoints, so Atomic Layout knows when to apply props that have no breakpoint suffix.
 {% endhint %}
 
 ### `defaultBreakpointName`
@@ -151,8 +139,7 @@ Make sure to explicitly provide a [default breakpoint name](configure.md#default
 
 #### Example
 
-{% code-tabs %}
-{% code-tabs-item title="src/App.jsx" %}
+{% code title="src/App.jsx" %}
 ```jsx
 import Layout from 'atomic-layout'
 
@@ -168,18 +155,15 @@ Layout.configure({
   },
 })
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/SomeComponent.jsx" %}
+{% code title="src/components/SomeComponent.jsx" %}
 ```jsx
 <Composition
   padding={...}
   paddingDesktop={...} />
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Breakpoint-less `padding` prop is now applied on the `mobile` breakpoint by default.
 
