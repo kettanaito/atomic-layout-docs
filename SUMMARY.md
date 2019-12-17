@@ -32,6 +32,7 @@
   * [useBreakpointChange](api/hooks/use-breakpoint-change.md)
   * [useResponsiveValue](api/hooks/use-responsive-value.md)
   * [useResponsiveProps](api/hooks/useresponsiveprops.md)
+  * [useResponsiveComponent](api/hooks/useresponsivecomponent.md)
 
 ## Recipes
 
