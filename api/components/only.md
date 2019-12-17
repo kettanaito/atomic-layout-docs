@@ -36,8 +36,6 @@ const Post = () => (
 )
 ```
 
-## Display models
-
 ### High-pass
 
 High-pass is a display model where the content is shown after a specified breakpoint \(incl.\).
