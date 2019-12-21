@@ -21,7 +21,7 @@ type useViewportChange = (
 import React, { useState } from 'react'
 import { useViewportChange } from 'atomic-layout'
 
-const StickyPanel = ({ target }) => {
+export const StickyPanel = ({ target }) => {
   const [topOffset, setOffset] = useState(0)
   
   useViewportChange(() => {

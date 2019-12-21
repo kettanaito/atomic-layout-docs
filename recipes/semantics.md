@@ -16,11 +16,9 @@ To render a different HTML element provide its name as a value of the `as` prop 
 import React from 'react'
 import { Box } from 'atomic-layout'
 
-const Header = (props) => (
+export const Header = (props) => (
   <Box as="header" {...props} />
 )
-
-export default Header
 ```
 
 ## Using React component
@@ -42,11 +40,9 @@ const Header = (props) => (
   <div {...props} />
 )
 
-const MyComponent = () => (
+export const MyComponent = () => (
   <Box as={Header} height={50} padding={10} />
 )
-
-export default MyComponent
 ```
 
 ## Custom areas components
@@ -58,7 +54,7 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 import { Footer as CustomFooter } from '@components'
 
-const PageContent = () => (
+export const PageContent = () => (
   <Composition as="main" areas="header footer">
     {(Areas) => (
       <>
@@ -68,7 +64,5 @@ const PageContent = () => (
     )}
   </Composition>
 )
-
-export default PageContent
 ```
 

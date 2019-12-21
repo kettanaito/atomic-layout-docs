@@ -24,13 +24,11 @@ Box supports all [Prop aliases](../../fundamentals/prop-aliases.md), _except_ th
 import React from 'react'
 import { Box } from 'atomic-layout'
 
-const Header = ({ children }) => (
+export const Header = ({ children }) => (
   <Box as="header" padding={10} paddingMd={20}>
     {children}
   </Box>
 )
-
-export default Header
 ```
 {% endcode %}
 

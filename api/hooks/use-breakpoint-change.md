@@ -21,7 +21,7 @@ type useBreakpointChange = (
 import React, { useState } from 'react'
 import { useBreakpointChange } from 'atomic-layout'
 
-const Component = () => {
+export const Component = () => {
   const [currentBreakpoint, setCurrentBreakpoint] = useState()
 
   useBreakpointChange((breakpointName) => {

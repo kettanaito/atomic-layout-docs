@@ -16,7 +16,7 @@ type UseResponsiveProps<Props> = (props: Props) => Partial<Props>
 import React from 'react'
 import { useResponsiveProps } from 'atomic-layout'
 
-const Avatar = (props) => {
+export const Avatar = (props) => {
   const { url } = useResponsiveProps(props)
   
   return <img src={url} />

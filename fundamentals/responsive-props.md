@@ -40,7 +40,7 @@ Atomic Layout is mobile-first. That means that by default all responsive props a
 import React from 'react'
 import { Box } from 'atomic-layout'
 
-const Header = ({ children }) => (
+export const Header = ({ children }) => (
   <Box
     paddingVertical={10}
     paddingVerticalMd={20}
@@ -54,7 +54,7 @@ const Header = ({ children }) => (
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const Post = ({ title, content }) => (
+export const Post = ({ title, content }) => (
   <Composition
     areas={`
       header

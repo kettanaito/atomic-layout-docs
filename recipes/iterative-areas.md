@@ -6,15 +6,13 @@ A single template area may be rendered multiple types, for example during the it
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const List = ({ items }) => (
+export const List = ({ items }) => (
   <Composition areas="column" gap={10}>
     {(Areas) => items.map((item) => (
       <Areas.Column key={item.id} col="auto">{item}</Areas.Column> 
     ))}
   </Composition>
 )
-
-export default List
 ```
 
 {% hint style="success" %}

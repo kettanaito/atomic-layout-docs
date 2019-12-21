@@ -17,7 +17,7 @@ type useResponsiveValue<T> = (
 import React from 'react'
 import { useResponsiveValue } from 'atomic-layout'
 
-const ReadTime = ({ duration }) => {
+export const ReadTime = ({ duration }) => {
   // Truncate a label caption based on the viewport
   const caption = useResponsiveValue(
     {

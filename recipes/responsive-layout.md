@@ -59,7 +59,7 @@ const areasDesktop = `
   thumbnail meta
 `
 
-const Card = () => (
+export const Card = () => (
   <Composition
     areas={areasMobile}
     areasLg={areasDesktop}>
@@ -73,8 +73,6 @@ const Card = () => (
     )}
   </Composition>
 )
-
-export default Card
 ```
 
 The composition above will wrap `Meta` grid area in a `<MediaQuery/>` component from [react-responsive](https://github.com/contra/react-responsive). This area will render on `lg` breakpoint and up, because there is no succeeding template declaration that would contradict that, and because "up" is the default responsive behavior.

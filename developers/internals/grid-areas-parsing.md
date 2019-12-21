@@ -1,9 +1,7 @@
 # Grid areas parsing
 
-This section describes the internal functionality of parsing layout areas, and creating React components based on them.
-
 {% hint style="danger" %}
-This information is meant for library maintainers. This is not something that can benefit you directly as a user of the library.
+**This information is meant for library maintainers. This is not something that can benefit you directly as a user of the library.**
 {% endhint %}
 
 ## Get unique area names

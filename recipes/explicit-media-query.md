@@ -5,7 +5,7 @@ Atomic Layout stores an application-wide configuration of your layout, including
 ```jsx
 import Layout from 'atomic-layout'
 
-const CustomComponent = styled.div`
+export const CustomComponent = styled.div`
   color: #000;
   
   @media (min-width: ${Layout.breakpoints.md.minWidth}) {

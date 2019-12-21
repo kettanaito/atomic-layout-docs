@@ -16,11 +16,9 @@ To start, let's create a new `Album` component that will represent our UI elemen
 ```jsx
 import React from 'react'
 
-const Album = () => (
+export const Album = () => (
   <p>Nothing unusual yet</p>
 )
-
-export default Album
 ```
 {% endcode %}
 
@@ -57,7 +55,7 @@ const areasMobile = `
 On its own the `areasMobile` variable is just a string. In order for it to be used as a blueprint for a layout composition, we need to pass it as a value to the `areas` prop of the `Composition` component:
 
 ```jsx
-const Album = () => (
+export const Album = () => (
   <Composition areas={areasMobile}>
     <p>Still nothing extraordinary</p>
   </Composition>
@@ -67,7 +65,7 @@ const Album = () => (
 If a Composition component accepts areas it returns React components generated based on passed areas. Those components are available in the children render function as arguments:
 
 ```jsx
-const Album = () => (
+export const Album = () => (
   <Composition areas={areasMobile}>
     /* React components based on "areasMobile" areas */
     {(Areas) => (
@@ -86,7 +84,7 @@ const Album = () => (
 Now we can render other components inside those area component to make up the desired appearance. This is an example of how this would look like:
 
 ```jsx
-const Album = ({ title, imageUrl, releaseYear, artistName }) => (
+export const Album = ({ title, imageUrl, releaseYear, artistName }) => (
   <Composition areas={areasMobile}>
     {(Areas) => (
       <>
@@ -117,7 +115,7 @@ Our areas template string describes a spacial relation of areas. However, to spe
 For example, to space out the areas we can use the `gap` prop \(that aliases `grid-gap` CSS property\).
 
 ```jsx
-const Album = () => (
+export const Album = () => (
   <Composition areas={areasMobile} gap={10}>
     {(Areas) => (
       /* Same areas here... */

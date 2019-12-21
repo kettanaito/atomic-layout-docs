@@ -13,12 +13,10 @@ Apart from `useResponsiveComponent`, you can use `useResponsiveProps` hooks to p
 import React from 'react'
 import { useResponsiveProps } from 'atomic-layout'
 
-const Image = (props) => {
+export const Image = (props) => {
   const { url, size } = useResponsiveProps(props)
   return <img src={url} height={size} width={size} />
 }
-
-export default Image
 ```
 {% endcode %}
 
@@ -33,11 +31,9 @@ Such declaration, however, is lengthy and results into repeated logic when used 
 import React from 'react'
 import { useResponsiveComponent } from 'atomic-layout'
 
-const Image = ({ url, size }) => (
+export const Image = ({ url, size }) => (
   <img src={url} height={size} width={size} />
 )
-
-export default useResponsiveComponent(Image)
 ```
 {% endcode %}
 {% endtab %}

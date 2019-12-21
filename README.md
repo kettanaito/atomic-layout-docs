@@ -19,7 +19,7 @@ const areas = `
   footer
 `
 
-const Page = () => (
+export const Page = () => (
   <Composition areas={areas}>
     {({ Header, Body, Footer }) => (
       <>

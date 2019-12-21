@@ -6,7 +6,7 @@ When using layout areas Atomic Layout generates React components for each declar
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const Header = () => (
+export const Header = () => (
   <Composition areas="logo menu">
     {({ Logo, Menu }) => ( // <-- generted areas components
       <>
@@ -25,7 +25,7 @@ However, this way area components reserve their namespaces within the render fun
 ```jsx
 const Logo = () => <img src="logo.png" />
 
-const Header = () => (
+export const Header = () => (
   <Composition areas="logo menu">
     {({ Logo, Menu }) => (
       <>
@@ -47,9 +47,11 @@ To prevent from namespace collisions we recommend not to spread the areas Object
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const Logo = () => <img src="logo.png" />
+const Logo = () => (
+  return <img src="logo.png" />
+)
 
-const Header = () => (
+export const Header = () => (
   <Composition areas="logo menu">
     {(Areas) => (
       <>

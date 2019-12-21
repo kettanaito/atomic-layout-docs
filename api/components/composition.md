@@ -86,15 +86,13 @@ Composition can be used without any templates. In that case it serves as a `disp
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
-const Header = () => (
+export const Header = () => (
   <Composition templateCols="repeat(3, 1fr)">
     <Logo />
     <Menu />
     <Actions />
   </Composition>
 )
-
-export default Header
 ```
 
 Note that using the Box component is recommended when you don't wish to control elements composition, but want to distribute spacial relation of the parent element.
@@ -119,7 +117,7 @@ const areasDesktop = `
   thumbnail content
 `
 
-const ArtistCard = ({ title, imageUrl, description }) => (
+export const ArtistCard = ({ title, imageUrl, description }) => (
   <Composition
     areas={areasMobile}
     areasMd={areasDesktop}
@@ -141,8 +139,6 @@ const ArtistCard = ({ title, imageUrl, description }) => (
     )}
   </Composition>
 )
-
-export default ArtistCard
 ```
 {% endcode %}
 
@@ -159,7 +155,7 @@ const areasMobile = `
   content
 `
 
-const ArtistCard = ({
+export const ArtistCard = ({
   title,
   description,
   publishDate,
@@ -182,8 +178,6 @@ const ArtistCard = ({
     )}
   </Composition>
 )
-
-export default ArtistCard
 ```
 {% endcode %}
 
@@ -203,7 +197,7 @@ const areasTablet = `
   text text
 `
 
-const ArtistContent = ({ description, publishDate, onShareClick }) => (
+export const ArtistContent = ({ description, publishDate, onShareClick }) => (
   <Composition
     areas={areasMobile}
     areasMd={areasTablet}
@@ -224,8 +218,6 @@ const ArtistContent = ({ description, publishDate, onShareClick }) => (
     )}
   </Composition>
 )
-
-export default ArtistContent
 ```
 {% endcode %}
 

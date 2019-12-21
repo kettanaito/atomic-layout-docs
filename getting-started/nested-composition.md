@@ -13,9 +13,9 @@ import React from 'react'
 import { Composition } from 'atomic-layout'
 // The Album component we have created in
 // the previous steps of this tutorial.
-import Album from './Album'
+import { Album } from './Album'
 
-const AlbumsList = ({ albums }) => (
+export const AlbumsList = ({ albums }) => (
   <Composition gap={10}>
     {albums.map((album) => (
       <Album

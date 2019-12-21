@@ -44,7 +44,7 @@ const Button = () => (
   <Composition areas="icon text">{...}</Composition>
 )
 
-const CardItem = () => (
+export const CardItem = () => (
   <Composition areas="actions">
     {({ Actions }) => (
       <>

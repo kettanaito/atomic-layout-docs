@@ -21,8 +21,8 @@
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = () => (
-  <>
+export const Post = () => (
+  <article>
     {/* Refer to a breakpoint defined in "Layout.configure()" by name */}
     <Only for="sm">
       <p>Renders on "sm" breakpoint</p>
@@ -32,7 +32,7 @@ const Post = () => (
     <Only for={{ minWidth: 900, maxWidth: 1000 }}>
       <p>Renders on the custom breakpoint</p>
     </Only>
-  </>
+  </article>
 )
 ```
 
@@ -44,7 +44,7 @@ High-pass is a display model where the content is shown after a specified breakp
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = () => (
+export const Post = () => (
   <Only from="md">
     <p>Doesn't render on xs and sm.</p>
   </Only>
@@ -59,7 +59,7 @@ Low-pass is a display model where the content is displayed prior to a specified 
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = () => (
+export const Post = () => (
   <Only to="md">
     <p>Doesn't render after md.</p>
   </Only>
@@ -74,7 +74,7 @@ Bell is a combination of low-pass and high-pass display models. The content is d
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = () => (
+export const Post = () => (
   <Only from="sm" to="lg">
     <p>Renders only from "sm" up to "lg" (not including).</p>
   </Only>
@@ -89,7 +89,7 @@ Notch is the reversed variant of the Bell behavior: the content is rendered ever
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = () => (
+export const Post = () => (
   <Only except from="sm" to="lg">
     <p>Renders on xs and xl.</p>
   </Only>
@@ -104,7 +104,7 @@ This component can be used independently from any other components of the librar
 import React from 'react'
 import { Only } from 'atomic-layout'
 
-const Post = (props) => (
+export const Post = (props) => (
   <article>
     <h2>{props.title}</h2>
     <p>{props.content}</p>
@@ -114,8 +114,6 @@ const Post = (props) => (
     </Only>
   </article>
 )
-
-export default Post
 ```
 
 ### Custom breakpoints
@@ -125,8 +123,8 @@ Apart from passing defined breakpoint names, you can provide a custom [breakpoin
 ```jsx
 import { Only } from 'atomic-layout'
 
-const Post = () => (
-  <>
+export const Post = () => (
+  <article>
     {/* Explicit */}
     <Only for={{ maxWidth: 568 }}>
       <p>Renders for the given breakpoint</p>
@@ -151,7 +149,7 @@ const Post = () => (
     <Only except from={{ minWidth: 568 }} to={{ maxWidth: 769 }}>
       <p>Renders everywhere except the given breakpoint range.</p>
     </Only>
-  </>
+  </article>
 )
 ```
 
