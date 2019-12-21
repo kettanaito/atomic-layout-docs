@@ -1,16 +1,18 @@
 # useResponsiveProps
 
+## Specification
+
 The hook adds [Responsive props](../../fundamentals/responsive-props.md) support to any React component by proxying given props based on the current viewport dimensions.
 
 Accepts an Object of responsive props and returns an Object of pure props relevant to the current viewport. Breakpoint name and behavior is stripped out from the pure props.
 
-### Definition
+## Definition
 
 ```typescript
 type UseResponsiveProps<Props> = (props: Props) => Partial<Props>
 ```
 
-### Example
+## Example
 
 ```jsx
 import React from 'react'

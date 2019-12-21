@@ -1,12 +1,14 @@
 # useViewportChange
 
-Executes a given callback on every viewport change \(i.e. window resize\).
+## Specification
+
+Executes a given callback on every viewport size change. You can treat this hook as a throttled window resize handler.
 
 {% hint style="info" %}
-Viewport changes are debounced by default.
+Viewport changes are throttled by default for optimal performance.
 {% endhint %}
 
-### Definition
+## Definition
 
 ```typescript
 type useViewportChange = (
@@ -15,20 +17,22 @@ type useViewportChange = (
 )
 ```
 
-### Example
+## Example
 
 ```jsx
 import React, { useState } from 'react'
 import { useViewportChange } from 'atomic-layout'
 
-export const StickyPanel = ({ target }) => {
-  const [topOffset, setOffset] = useState(0)
+export const WidthObserver = ({ target }) => {
+  const [windowWidth, setWindowWidth] = useState(0)
   
   useViewportChange(() => {
-    setOffset(target.y)
+    setWindowWidth(window.clientWidth)
   })
   
-  return ()
+  return <p>Window width: {windowWidth}px</p>
 }
 ```
+
+
 

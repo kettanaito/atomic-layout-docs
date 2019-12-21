@@ -1,8 +1,10 @@
 # useResponsiveValue
 
+## Specification
+
 Returns a value based on the given breakpoint-value pairs. Whenever viewport matches a given breakpoint, its associated value is returned.  Returns the default value, if any, when no breakpoints are matched.
 
-### Definition
+## Definition
 
 ```typescript
 type useResponsiveValue<T> = (
@@ -11,7 +13,7 @@ type useResponsiveValue<T> = (
 )
 ```
 
-### Example
+## Example
 
 ```jsx
 import React from 'react'

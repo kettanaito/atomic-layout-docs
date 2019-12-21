@@ -1,12 +1,14 @@
 # useBreakpointChange
 
+## Specification
+
 Executes a given callback function whenever a breakpoint changes. Provides a breakpoint name that matches the current viewport as the first argument.
 
 {% hint style="info" %}
 Breakpoint changes are based on [`useViewportChange`](use-viewport-change.md), and are also debounced.
 {% endhint %}
 
-### Definition
+## Definition
 
 ```typescript
 type useBreakpointChange = (
@@ -15,7 +17,7 @@ type useBreakpointChange = (
 )
 ```
 
-### Example
+## Example
 
 ```jsx
 import React, { useState } from 'react'
