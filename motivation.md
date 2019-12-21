@@ -2,7 +2,7 @@
 
 In the era of erupting component-focused development, we often underestimate spacing as a powerful relation distributing tool. Rigid frameworks have taken place of what might have been a simple, implementation vision of spacing, and layout composition that it empowers.
 
-Inspired by [atomic design](http://bradfrost.com/blog/post/atomic-web-design), Atomic Layout comes in to bring developers a physical grasp over such previously empirical concepts as spacing and composition. Apart from challenging the interface development process, it also focuses on making it fast and standardized, resulting into **layout that is easy to understand and maintain**.
+Inspired by [Atomic design](http://bradfrost.com/blog/post/atomic-web-design), Atomic Layout comes in to bring developers a physical grasp over such previously empirical concepts as spacing and composition. Apart from challenging the interface development process, it also focuses on making it fast and standardized, resulting into **layout that is easy to understand and maintain**.
 
 ## Core principles
 
