@@ -221,5 +221,40 @@ export const ArtistContent = ({ description, publishDate, onShareClick }) => (
 ```
 {% endcode %}
 
+### Using areas templates
 
+It is possible to describe the size of each column/row using a shorthand `grid-template` syntax.
+
+To specify a row size put a slash \(`/`\) after row areas declaration and provide the size value. To specify a columns size simply create a new row with columns sizes only.
+
+```jsx
+import React from 'react'
+import { Composition } from 'atomic-layout'
+
+const templateTablet = `
+  meta actions / 250px
+  text text / 1fr
+  500px auto
+`
+
+export const ArtistContent = ({ description, publishDate, onShareClick }) => (
+  <Composition template={templateTablet}>
+    {({ Meta, Actions, Text) => (
+      <>
+        <Meta>{publishDate}</Meta>
+        <Actions>
+          <button onClick={onShareClick}>Share</button>
+        </Actions>
+        <Text>
+          {description}
+        </Text>
+      </>
+    )}
+  </Composition>
+)
+```
+
+{% hint style="info" %}
+Note that in order to use `grid-template` syntax you must provide the template string as a value of the `template` prop of the Composition component.
+{% endhint %}
 
