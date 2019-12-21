@@ -42,7 +42,3 @@
 * [Responsive layout](recipes/responsive-layout.md)
 * [Responsive styles](recipes/explicit-media-query.md)
 
-## Developers
-
-* [Contributing](developers/contributing.md)
-
