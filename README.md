@@ -36,7 +36,9 @@ export const Page = () => (
 
 ## Getting started
 
-{% page-ref page="resources.md" %}
+We've prepared a full-scale tutorial where you will be creating a set of UI elements using Atomic Layout. That's a great place to get started with the library.
+
+{% page-ref page="getting-started/installation.md" %}
 
 ## Motivation
 
