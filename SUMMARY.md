@@ -3,7 +3,8 @@
 * [Introduction](README.md)
 * [Motivation](motivation.md)
 * [Resources](resources.md)
-* [FAQ](faq.md)
+* [FAQ](faq/README.md)
+  * [Comparison with styled-system](faq/comparison-with-styled-system.md)
 
 ## Getting started
 
