@@ -18,7 +18,7 @@ export const Header = () => (
 )
 ```
 
-To make rendering part shorter, we recommend using Object spread for areas object given as an argument to the render function.
+To make the rendering part shorter, we recommend using [Object Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) for areas object given as an argument to the render function.
 
 However, this way area components reserve their namespaces within the render function's scope. This may result into conflicts when you have custom React components which name matches the area name:
 

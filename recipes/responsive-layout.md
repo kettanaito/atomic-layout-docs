@@ -5,7 +5,7 @@ Responsive is a crucial part of any layout implementation. That's why its concep
 **Implementation of responsive layout has two parts:**
 
 1. Conditional \(responsive\) areas;
-2. Conditional props assignment \(`gutter`, `margin`, etc.\);
+2. Conditional props assignment \(`gap`, `margin`, etc.\);
 
 In this section we are going to take a look at how to implement these fundamentals. Make sure to be familiar with the basics of the library before you continue reading.
 
@@ -89,8 +89,8 @@ We have already used a responsive prop in the example above. By suffixing `templ
 <Composition
   areas={areasMobile}
   areasLg={areasDesktop}
-  gutter={10}
-  gutterLg={20}>
+  gap={10}
+  gapLg={20}>
   {(Areas) => (
     <>
       <Areas.Thumbnail>I am rendered always</Areas.Thumbnail>

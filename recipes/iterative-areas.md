@@ -16,7 +16,7 @@ export const List = ({ items }) => (
 ```
 
 {% hint style="success" %}
-By setting `row` and `col` props to "auto" you enable the auto-placing algorithm.
+By setting `row` and `col` props to "auto" you enable the auto-placing algorithm of CSS Grid.
 {% endhint %}
 
 

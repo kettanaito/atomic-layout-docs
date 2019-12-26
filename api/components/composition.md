@@ -225,17 +225,16 @@ export const ArtistContent = ({ description, publishDate, onShareClick }) => (
 
 It is possible to describe the size of each column/row using a shorthand `grid-template` syntax.
 
-* To specify a row size put its numeric value right after the row areas declaration.
-* To specify a column size put a trailing slash \(`/`\) and provide each column's dimensions after it.
+To specify a row size put a slash \(`/`\) after row areas declaration and provide the size value. To specify a columns size simply create a new row with columns sizes only.
 
 ```jsx
 import React from 'react'
 import { Composition } from 'atomic-layout'
 
 const templateTablet = `
-  meta actions 250px
-  text text 1fr
-  / 500px auto
+  meta actions / 250px
+  text text / 1fr
+  500px auto
 `
 
 export const ArtistContent = ({ description, publishDate, onShareClick }) => (

@@ -2,6 +2,10 @@
 
 ## Can I use Atomic Layout with emotion/glamour/etc.?
 
+{% hint style="success" %}
+We are currently working on **emotion** support in [\#262](https://github.com/kettanaito/atomic-layout/pull/262).
+{% endhint %}
+
 The current implementation of the library requires `styled-components` as a peer dependency in your project. You can use any other styling library alongside Atomic Layout, but it will rely on the `styled` to generate CSS internally.
 
 **However**, the rendering and styling parts of the library's implementation are isolated from the areas generation and responsive logic, which makes Atomic Layout susceptible to becoming a styling-agnostic solution.
