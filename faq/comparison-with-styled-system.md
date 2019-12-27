@@ -28,7 +28,7 @@ Styled system uses an Array of values listed from left to right, which represent
 <Box padding={[10, 20, 30]} />
 ```
 
-However, such declaration is more complex since the relation between a breakpoint and its value is implicit. In other words, we can't say which breakpoint the value `20` describes without knowing a complete set of breakpoints in our system. I find this syntax not beginner-friendly, as it's an additional library-specific logic.
+However, such declaration is more complex since the relation between a breakpoint and its value is implicit. In other words, we can't say which breakpoint the value `20` describes without knowing a complete set of breakpoints in our system.
 
 There are also a few questions that come to my mind when looking at such declaration:
 
