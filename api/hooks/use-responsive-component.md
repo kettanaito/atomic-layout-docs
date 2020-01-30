@@ -31,9 +31,11 @@ Such declaration, however, is lengthy and results into repeated logic when used 
 import React from 'react'
 import { useResponsiveComponent } from 'atomic-layout'
 
-export const Image = ({ url, size }) => (
+const Image = ({ url, size }) => (
   <img src={url} height={size} width={size} />
 )
+
+export default useResponsiveComponent(Image)
 ```
 {% endcode %}
 {% endtab %}
