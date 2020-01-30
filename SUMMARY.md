@@ -33,8 +33,8 @@
   * [useViewportChange](api/hooks/use-viewport-change.md)
   * [useBreakpointChange](api/hooks/use-breakpoint-change.md)
   * [useResponsiveValue](api/hooks/use-responsive-value.md)
-  * [useResponsiveProps](api/hooks/useresponsiveprops.md)
-  * [useResponsiveComponent](api/hooks/useresponsivecomponent.md)
+  * [useResponsiveProps](api/hooks/use-responsive-props.md)
+  * [useResponsiveComponent](api/hooks/use-responsive-component.md)
 
 ## Recipes
 
