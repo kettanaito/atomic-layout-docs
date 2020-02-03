@@ -1,6 +1,8 @@
-# Responsive styles
+# Explicit media query
 
-Atomic Layout stores an application-wide configuration of your layout, including breakpoints. Yet sometimes you may want to declare a manual media query in your styles. In order for the breakpoints to be in-sync, reference the `Layout` namespace from the library, and reference a breakpoint you need:
+Although Atomic Layout provides the [Responsive props](../fundamentals/responsive-props.md) feature for shorter responsive declarations of various CSS properties, sometimes declaring an explicit media query is necessary.
+
+To preserve Atomic Layout breakpoints as a source of truth it's recommended to reference breakpoints' dimensions from the `Layout` namespace exported by the library.
 
 ```jsx
 import Layout from 'atomic-layout'
@@ -13,6 +15,10 @@ export const CustomComponent = styled.div`
   }
 `
 ```
+
+{% hint style="info" %}
+See all the breakpoint properties you can use in the [Breakpoints](../fundamentals/breakpoints.md) section.
+{% endhint %}
 
 
 

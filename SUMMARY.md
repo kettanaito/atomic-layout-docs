@@ -42,5 +42,5 @@
 * [Namespaces](recipes/namespaces.md)
 * [Iterative areas](recipes/iterative-areas.md)
 * [Responsive layout](recipes/responsive-layout.md)
-* [Responsive styles](recipes/explicit-media-query.md)
+* [Explicit media query](recipes/explicit-media-query.md)
 
