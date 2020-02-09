@@ -37,6 +37,7 @@ Each prop alias is associated with a single, or multiple corresponding CSS prope
 
 | **Prop name** | **CSS property** |
 | :--- | :--- |
+| `order` | [`order`](https://developer.mozilla.org/en-US/docs/Web/CSS/order) |
 | `flexDirection` | [`flex-direction`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) |
 | `flexShrink` | [`flex-shrink`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink) |
 | `flexGrow` | [`flex-grow`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow) |
