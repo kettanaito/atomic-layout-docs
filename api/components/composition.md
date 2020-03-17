@@ -50,11 +50,11 @@ Once layout templates are defined, pass them as the respective `areas` props of 
 <Composition
   areas={areasMobile}
   areasMd={areasTablet}>
-  {({ Logo, Search, Menu }) => (
+  {(Areas) => (
     <>
-      <Logo>...</Logo>
-      <Search>...</Search>
-      <Menu>...</Menu>
+      <Areas.Logo>...</Areas.Logo>
+      <Areas.Search>...</Areas.Search>
+      <Areas.Menu>...</Areas.Menu>
     </>
   )}
 </Composition>
@@ -124,17 +124,17 @@ export const ArtistCard = ({ title, imageUrl, description }) => (
     gap={10}
     gapMd={20}
     padding={10}>
-    {({ Thumbnail, Heading, Content }) => (
+    {(Areas) => (
       <>
-        <Thumbnail>
+        <Areas.Thumbnail>
           <img src={imageUrl} alt={title} />
-        </Thumbail>
-        <Heading>
+        </Areas.Thumbail>
+        <Areas.Heading>
           <h3>{title}</h3>
-        </Heading>
-        <Content>
+        </Areas.Heading>
+        <Areas.Content>
           <p>{description}</p>
-        </Content>
+        </Areas.Content>
       </>
     )}
   </Composition>
@@ -163,17 +163,17 @@ export const ArtistCard = ({
   onShareClick
 }) => (
   <Composition areas={areasMobile}>
-    {({ Thumbnail, Content }) => (
+    {(Areas) => (
       <>
-        <Thumbnail>
+        <Areas.Thumbnail>
           <img src={imageUrl} alt={title} />
-        </Thumbnail>
-        <Content>
+        </Areas.Thumbnail>
+        <Areas.Content>
           <ArtistContent
             description={description}
             publishDate={publishDate}
             onShareClick={onShareClick} />
-        </Content>
+        </Areas.Content>
       </>
     )}
   </Composition>
@@ -240,15 +240,15 @@ const templateTablet = `
 
 export const ArtistContent = ({ description, publishDate, onShareClick }) => (
   <Composition template={templateTablet}>
-    {({ Meta, Actions, Text) => (
+    {(Areas) => (
       <>
-        <Meta>{publishDate}</Meta>
-        <Actions>
+        <Areas.Meta>{publishDate}</Areas.Meta>
+        <Areas.Actions>
           <button onClick={onShareClick}>Share</button>
-        </Actions>
-        <Text>
+        </Areas.Actions>
+        <Areas.Text>
           {description}
-        </Text>
+        </Areas.Text>
       </>
     )}
   </Composition>
