@@ -1,8 +1,6 @@
 # Introduction
 
-![](.gitbook/assets/logo.svg)
-
-
+![](.gitbook/assets/atomic-layout-200.png)
 
 [Atomic Layout](https://github.com/kettanaito/atomic-layout) is a spatial distribution library for React. It uses [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) to define layout areas and render them as React components_._ You control spacing between the areas in a dedicated layer called _Composition_. Since the position and spacing is contextless that way, you achieve ultimate separation of concerns and boost maintenance of your components.
 
