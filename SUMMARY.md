@@ -30,6 +30,7 @@
   * [Visible](api/components/visible.md)
 * [Hooks](api/hooks/README.md)
   * [useMediaQuery](api/hooks/use-media-query.md)
+  * [useResponsiveQuery](api/hooks/use-responsive-query.md)
   * [useViewportChange](api/hooks/use-viewport-change.md)
   * [useBreakpointChange](api/hooks/use-breakpoint-change.md)
   * [useResponsiveValue](api/hooks/use-responsive-value.md)
