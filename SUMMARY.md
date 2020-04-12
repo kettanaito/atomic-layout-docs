@@ -36,6 +36,8 @@
   * [useResponsiveValue](api/hooks/use-responsive-value.md)
   * [useResponsiveProps](api/hooks/use-responsive-props.md)
   * [useResponsiveComponent](api/hooks/use-responsive-component.md)
+* [Utilities](api/utilities/README.md)
+  * [query](api/utilities/query.md)
 
 ## Recipes
 
