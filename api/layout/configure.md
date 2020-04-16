@@ -5,8 +5,27 @@
 Applies global layout configuration.
 
 {% hint style="warning" %}
-Layout is meant to be configured **once**, on the root level of your application. Make sure to call `Layout.configure()` only once, if necessary.
+Layout is meant to be configured **once**, on the root level of your application.
 {% endhint %}
+
+Calling `Layout.configure()` on your application's root mount is usually a good place:
+
+```jsx
+import React, { useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import Layout from 'atomic-layout'
+
+const App = () => {
+  useEffect(() => {
+    // A single call to configure layout upon App's mount
+    Layout.configure(options)
+  }, [])
+  
+  return <Tree />
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
+```
 
 ## Options
 
