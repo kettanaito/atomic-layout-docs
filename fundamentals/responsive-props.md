@@ -19,7 +19,7 @@ Any [Prop alias](prop-aliases.md) can be used as a responsive prop name.
 {% hint style="info" %}
 Note that **not** all props are supported as responsive. In order to preserve an idiological approach of the library you won't be able to use arbitrary props like `textAlign` or `backgroundColor` as responsive, by dedfault.
 
-If you require the responsive support for arbitrary props see the [`useResponsiveProps`](../api/hooks/use-responsive-props.md) and [`useResponsiveComponent`](../api/hooks/use-responsive-component.md) hooks.
+If you require the responsive support for arbitrary props see the [`useResponsiveProps`](../api/hooks/use-responsive-props.md) and [`useResponsiveComponent`](../api/utilities/use-responsive-component.md) hooks.
 {% endhint %}
 
 ### Breakpoint name

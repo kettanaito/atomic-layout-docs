@@ -1,12 +1,12 @@
-# useResponsiveComponent
+# makeResponsive
 
 ## Specification
 
-`useResponsiveComponent` hook is designed for shorthand declaration of a React component which props are treated as [Responsive props](../../fundamentals/responsive-props.md).
+`makeResponsive` is a high-order component designed for providing [Responsive props](../../fundamentals/responsive-props.md) to any given React component.
 
 ### Alternative declaration
 
-Apart from `useResponsiveComponent`, you can use `useResponsiveProps` hooks to proxy a map of props and resolve them based on the current breakpoint.
+Apart from `makeResponsive`, you can use `useResponsiveProps` hooks to proxy a map of props and resolve them based on the current breakpoint.
 
 {% code title="components/Image.jsx" %}
 ```jsx
@@ -29,13 +29,13 @@ Such declaration, however, is lengthy and results into repeated logic when used 
 {% code title="components/Image.jsx" %}
 ```jsx
 import React from 'react'
-import { useResponsiveComponent } from 'atomic-layout'
+import { makeResponsive } from 'atomic-layout'
 
 const Image = ({ url, size }) => (
   <img src={url} height={size} width={size} />
 )
 
-export default useResponsiveComponent(Image)
+export default makeResponsive(Image)
 ```
 {% endcode %}
 {% endtab %}
