@@ -78,7 +78,3 @@ In this section we have learned:
 * How to change a layout of our component by introducing a new areas template;
 * How to use Responsive props to apply a prop value based on a breakpoint;
 
-### Live example
-
-> TODO Include
-

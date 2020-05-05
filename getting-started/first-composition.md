@@ -152,5 +152,5 @@ In this section we have learned:
 
 ### Live example
 
-{% embed url="https://codesandbox.io/embed/smoosh-pond-36et8?fontsize=14&hidenavigation=1&moduleview=1" %}
+{% embed url="https://codesandbox.io/embed/getting-started-first-composition-36et8?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fsteps%2Ffirst-composition%2Findex.js&moduleview=1&theme=light" caption="Getting Started sandbox" %}
 
