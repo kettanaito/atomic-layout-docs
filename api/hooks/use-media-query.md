@@ -18,7 +18,7 @@ Please see the Breakpoints page for the `Breakpoint` type reference:
 
 ```jsx
 import React from 'react'
-import { useMediaQuery } from 'atomic-layut'
+import { useMediaQuery } from 'atomic-layout'
 
 export const Component = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: 450 })
