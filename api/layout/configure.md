@@ -16,16 +16,58 @@ import ReactDOM from 'react-dom'
 import Layout from 'atomic-layout'
 
 const App = () => {
+  const [isConfigured, setIsConfigured] = useState(false);
+  
   useEffect(() => {
     // A single call to configure layout upon App's mount
     Layout.configure(options)
+    setIsConfigured(true)
   }, [])
   
-  return <Tree />
+  return <>{isConfigured && <Tree />}</>
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
 ```
+
+{% hint style="warning" %}
+`Layout.configure()` will not trigger a re-render of you component. Setting a flag like `isConfigured` is necessary to ensure that your application received the updated options.
+{% endhint %}
+
+## Modifying default options
+
+You can import the default settings from the `@atomic-layout/core` package:
+
+```js
+import { defaultOptions } from '@atomic-layout/core'
+```
+
+Here's an example of how to mofiy the default settings:
+
+```jsx
+import React, { useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import Layout from 'atomic-layout'
+import { defaultOptions } from '@atomic-layout/core'
+
+const App = () => {
+  const [isConfigured, setIsConfigured] = useState(false);
+  
+  useEffect(() => {
+    // A single call to configure layout upon App's mount
+    const options = Object.assign({}, defaultOptions)
+    options.breakpoints.xl = { minWidth: '1600px' }
+    Layout.configure(options)
+    setIsConfigured(true)
+  }, [])
+  
+  return <>{isConfigured && <Tree />}</>
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
+```
+
+
 
 ## Options
 
