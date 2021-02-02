@@ -24,7 +24,7 @@ export const AlbumsList = ({ albums }) => (
         releaseDate={album.releaseDate}
         artistName={album.artistName}
       />
-    )}
+    ))}
   </Composition>
 )
 ```
@@ -42,3 +42,7 @@ In this section we have learned:
 * Nesting is a crucial part of dealing with UI complexity;
 * A single React component may be a composition and a composite at the same time;
 
+
+### Live example
+
+{% embed url="https://codesandbox.io/embed/nested-composition-example-0jcbp?fontsize=14&hidenavigation=1&theme=dark" caption="Getting Started sandbox" %}
